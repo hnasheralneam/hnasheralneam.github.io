@@ -47,6 +47,14 @@ h2 {
    animation: colors 8s infinite alternate;
 }
 
+.download:nth-child(2) {
+   animation-delay: .5s;
+}
+
+.download:nth-child(3) {
+   animation-delay: 1s;
+}
+
 @keyframes colors {
    0% {
       background-color: red;
