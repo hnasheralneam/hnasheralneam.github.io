@@ -1,0 +1,72 @@
+body {
+   height: 100vh;
+   padding: 20px;
+   background-image: linear-gradient(to bottom, lightyellow, lightblue);
+   text-align: center;
+}
+
+nav {
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   background-color: #272727;
+   padding: 8px;
+}
+
+nav a {
+   color: #fff;
+   text-decoration: none;
+}
+
+h2 {
+   color: #262626;
+}
+
+.downloads {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.download {
+   height: 125px;
+   width: 200px;
+   margin: 15px;
+   padding: 15px;
+   border: outset 8px lightblue;
+   border-radius: 8px;
+   letter-spacing: 2px;
+   line-height: 35px;
+   text-decoration: none;
+   color: #262626;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   animation: colors 8s infinite alternate;
+}
+
+@keyframes colors {
+   0% {
+      background-color: red;
+   }
+   15% {
+      background-color: orange;
+   }
+   30% {
+      background-color: yellow;
+   }
+   45% {
+      background-color: lightgreen;
+   }
+   60% {
+      background-color: lightblue;
+   }
+   85% {
+      background-color: purple;
+   }
+   85% {
+      background-color: red;
+   }
+}
