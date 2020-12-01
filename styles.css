@@ -1,0 +1,45 @@
+body {
+   font-family: Helvetica;
+   background-color: whitesmoke;
+   padding: 30px 20px 20px 20px;
+}
+
+nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: #262626;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8px;
+}
+
+nav a {
+   color: #fff;
+   text-decoration: none;
+   margin: 8px;
+}
+
+#gold-rush {
+   height: 100vh;
+   background-color: #272727;
+   position: relative;
+}
+
+#gold-rush .content {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 0px;
+   visibility: collapse;
+   transition: all .2s;
+}
+
+#gold-rush:hover #gold-rush .content {
+   height: 100vh;
+   visibility: visible;
+}
