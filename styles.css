@@ -97,16 +97,14 @@ Main Sectors
 }
 
 #personal {
-   height: 100vh;
+   height: auto;
    width: 100%;
    background-color: whitesmoke;
    position: relative;
    overflow: scroll;
    scroll-snap-align: start;
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
+   text-align: center;
+   overflow-y: hidden;
 }
 
 /*==================================================
@@ -223,20 +221,20 @@ Display Images
 }
 
 #schoolarly-bay img:nth-child(2) {
-   bottom: 20%;
-   left: 20%;
+   bottom: 25%;
+   left: 5%;
    width: 175px;
    height: 175px;
 }
 
 #schoolarly-bay img:nth-child(3) {
    bottom: 20%;
-   left: 20%;
+   right: 10%;
 }
 
 #schoolarly-bay img:nth-child(4) {
-   bottom: 20%;
-   left: 20%;
+   bottom: 10%;
+   left: 25%;
    width: 125px;
    height: 125px;
 }
@@ -245,10 +243,53 @@ Display Images
 End Section
 ==================================================*/
 
+.find-me {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-wrap: wrap;
+   margin: auto;
+}
+
+.find-me a {
+   width: 90px;
+   height: 90px;
+   background-color: #f1f1f1;
+   margin: 10px;
+   border-radius: 30%;
+   color: #10ac84;
+   box-shadow: 0 5px 15px -5px #00000070;
+   position: relative;
+   overflow: hidden;
+   transition: all 0.2s;
+}
+
+i {
+   line-height: 90px;
+   font-size: 25px;
+   transition: all 0.2s;
+   margin-top: 35%;
+}
+
+.find-me a:hover i {
+   transform: scale(1.5);
+   color: whitesmoke;
+}
+
+.find-me a:hover {
+   background-color: #262626;
+}
+
 #linux-rainbow {
    size: auto;
-   max-width: 80%;
+   max-width: 60%;
    max-height: 60%;
    border-radius: 50px;
    animation: rainbow-glow 5s infinite;
+   margin-bottom: 75px;
+}
+
+hr {
+   display: block;
+   width: 100%;
 }
