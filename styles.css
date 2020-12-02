@@ -7,7 +7,6 @@ body {
    background-color: whitesmoke;
    padding: 0;
    margin: 0;
-   overflow-x: hidden;
    overflow-y: scroll;
    scroll-snap-type: y mandatory;
 }
@@ -127,18 +126,74 @@ Project Contents
 Other
 ==================================================*/
 
-#gold-rush-icon {
+@keyframes heavenly-glow {
+   0% {
+      box-shadow: none;
+   }
+   50% {
+      box-shadow: 5px 5px 5px whitesmoke,
+                  5px -5px 5px whitesmoke,
+                  -5px 5px 5px whitesmoke,
+                  -5px -5px 5px whitesmoke;
+   }
+   100% {
+      box-shadow: none;
+   }
+}
+
+@keyframes darkness-grows {
+   0% {
+      box-shadow: none;
+   }
+   50% {
+      box-shadow: 5px 5px 5px #262626,
+                  5px -5px 5px #262626,
+                  -5px 5px 5px #262626,
+                  -5px -5px 5px #262626;
+   }
+   100% {
+      box-shadow: none;
+   }
+}
+
+/*==================================================
+Display Images
+==================================================*/
+
+.display-image-dark {
    width: 150px;
    position: absolute;
    bottom: 30px;
    right: 60px;
    border-radius: 50%;
-   transition: all .8s;
+   animation: darkness-grows 3s infinite;
 }
 
-#gold-rush-icon:hover {
-   box-shadow: 5px 5px 5px whitesmoke,
-               5px -5px 5px whitesmoke,
-               -5px 5px 5px whitesmoke,
-               -5px -5px 5px whitesmoke;
+.display-image-light {
+   width: 150px;
+   height: 150px;
+   position: absolute;
+   bottom: 30px;
+   right: 60px;
+   border-radius: 50%;
+   animation: heavenly-glow 3s infinite;
+}
+
+#schoolarly-bay img:nth-child(2) {
+   bottom: 20%;
+   left: 20%;
+   width: 175px;
+   height: 175px;
+}
+
+#schoolarly-bay img:nth-child(3) {
+   bottom: 20%;
+   left: 20%;
+}
+
+#schoolarly-bay img:nth-child(4) {
+   bottom: 20%;
+   left: 20%;
+   width: 125px;
+   height: 125px;
 }
