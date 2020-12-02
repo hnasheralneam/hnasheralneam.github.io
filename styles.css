@@ -156,6 +156,44 @@ Other
    }
 }
 
+@keyframes rainbow-glow {
+   0% {
+      box-shadow: none;
+   }
+   50% {
+      box-shadow: 2px 2px 1px red,
+                  4px 4px 1px orange,
+                  6px 6px 1px yellow,
+                  8px 8px 1px lightgreen,
+                  10px 10px 1px lightblue,
+                  12px 12px 1px purple,
+
+                  2px -2px 1px red,
+                  4px -4px 1px orange,
+                  6px -6px 1px yellow,
+                  8px -8px 1px lightgreen,
+                  10px -10px 1px lightblue,
+                  12px -12px 1px purple,
+
+                  -2px 2px 1px red,
+                  -4px 4px 1px orange,
+                  -6px 6px 1px yellow,
+                  -8px 8px 1px lightgreen,
+                  -10px 10px 1px lightblue,
+                  -12px 12px 1px purple,
+
+                  -2px -2px 1px red,
+                  -4px -4px 1px orange,
+                  -6px -6px 1px yellow,
+                  -8px -8px 1px lightgreen,
+                  -10px -10px 1px lightblue,
+                  -12px -12px 1px purple;
+   }
+   100% {
+      box-shadow: none;
+   }
+}
+
 /*==================================================
 Display Images
 ==================================================*/
@@ -166,7 +204,12 @@ Display Images
    bottom: 30px;
    right: 60px;
    border-radius: 50%;
+   transition: all .8s;
    animation: darkness-grows 3s infinite;
+}
+
+.display-image-dark:hover {
+   transform: rotateX(360deg);
 }
 
 .display-image-light {
@@ -176,7 +219,12 @@ Display Images
    bottom: 30px;
    right: 60px;
    border-radius: 50%;
+   transition: all .8s;
    animation: heavenly-glow 3s infinite;
+}
+
+.display-image-light:hover {
+   transform: rotateY(360deg);
 }
 
 #schoolarly-bay img:nth-child(2) {
