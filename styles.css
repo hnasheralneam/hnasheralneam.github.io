@@ -1,11 +1,41 @@
+/*==================================================
+Main
+==================================================*/
+
 body {
    font-family: Helvetica;
    background-color: whitesmoke;
-   padding: 30px 20px 20px 20px;
+   padding: 0;
+   margin: 0;
+   overflow-x: hidden;
+   overflow-y: scroll;
+   scroll-snap-type: y mandatory;
 }
 
+::-webkit-scrollbar {
+   display: none;
+}
+
+/*==================================================
+Scrolling
+==================================================*/
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+
+}
+
+/*==================================================
+Navigation Bar
+==================================================*/
+
 nav {
-   position: fixed;
+   position: absolute;
    top: 0;
    left: 0;
    right: 0;
@@ -14,6 +44,8 @@ nav {
    justify-content: center;
    align-items: center;
    padding: 8px;
+   scroll-snap-align: center;
+   box-shadow: 0 8px 15px #262626;
 }
 
 nav a {
@@ -22,24 +54,75 @@ nav a {
    margin: 8px;
 }
 
+/*==================================================
+Main Sectors
+==================================================*/
+
+.project {
+   margin: 0;
+   height: 100vh;
+   scroll-snap-align: center;
+}
+
 #gold-rush {
    height: 100vh;
+   width: 100%;
    background-color: #272727;
    position: relative;
 }
 
-#gold-rush .content {
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   height: 0px;
-   visibility: collapse;
-   transition: all .2s;
+#incremental {
+   height: 100vh;
+   width: 100%;
+   background-color: whitesmoke;
+   position: relative;
 }
 
-#gold-rush:hover #gold-rush .content {
+#style {
    height: 100vh;
-   visibility: visible;
+   width: 100%;
+   background-color: #282828;
+   position: relative;
 }
+
+#hillside {
+   height: 100vh;
+   width: 100%;
+   background-color: whitesmoke;
+   position: relative;
+}
+
+#schoolarly-bay {
+   height: 100vh;
+   width: 100%;
+   background-color: #282828;
+   position: relative;
+}
+
+#squirrel {
+   height: 100vh;
+   width: 100%;
+   background-color: whitesmoke;
+   position: relative;
+   scroll-snap-align: center;
+}
+
+#personal {
+   height: 100vh;
+   width: 100%;
+   background-color: whitesmoke;
+   position: relative;
+   scroll-snap-align: center;
+}
+
+/*==================================================
+Project Contents
+==================================================*/
+
+.project h2, .project h4, .project p {
+   margin: 25px 25px;
+}
+
+/*==================================================
+Other
+==================================================*/
