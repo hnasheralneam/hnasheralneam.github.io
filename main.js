@@ -22,4 +22,3 @@ function last() {
       document.location = "#vegetable-dash";
    }
 }
-coming-soon
