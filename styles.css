@@ -43,7 +43,29 @@ Common Classes
    font-weight: 900;
 }
 
+.last {
+   height: 80px;
+   width: 80px;
+   background-color: #fff;
+   color: aquamarine;
+   position: absolute;
+   bottom: 50px;
+   left: 50px;
+   box-shadow: 0 0 8px #262626;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 250%;
+   border-radius: 50%;
+   transition: 0.8s;
+   font-weight: 900;
+}
+
 .next:hover {
+   transform: rotate(720deg);
+}
+
+.last:hover {
    transform: rotate(720deg);
 }
 
@@ -73,6 +95,10 @@ Common Classes
       margin-right: 0px;
    }
 }
+
+/* Links */
+
+/* Should have nice hover that shows some content from link */
 
 /*==================================================
 Landing
@@ -164,6 +190,9 @@ Landing
    opacity: 1;
 }
 
+/*==================================================
+Vegetable Dash
+==================================================
 
 
 

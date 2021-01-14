@@ -1,3 +1,1 @@
-function part2() {
-   document.getElementById("vegetable-dash").scrollIntoView();
-}
+// document.getElementById("vegetable-dash").scrollIntoView();
