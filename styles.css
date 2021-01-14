@@ -31,7 +31,7 @@ Common Classes
    width: 80px;
    background-color: #fff;
    color: aquamarine;
-   position: absolute;
+   position: fixed;
    bottom: 50px;
    right: 50px;
    box-shadow: 0 0 8px #262626;
@@ -49,7 +49,7 @@ Common Classes
    width: 80px;
    background-color: #fff;
    color: aquamarine;
-   position: relative;
+   position: fixed;
    bottom: 50px;
    left: 50px;
    box-shadow: 0 0 8px #262626;
@@ -60,6 +60,7 @@ Common Classes
    border-radius: 50%;
    transition: 0.8s;
    font-weight: 900;
+   opacity: 0;
 }
 
 .next:hover {
@@ -84,7 +85,7 @@ Common Classes
       margin-right: -8px;
    }
    40% {
-      margin-right: 0px;
+      margin-right: -2px;
    }
    60% {
       margin-right: -8px;
