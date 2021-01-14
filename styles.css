@@ -48,22 +48,29 @@ Common Classes
 }
 
 .arrow {
-   animation: nudge 5s linear infinite;
+   animation: nudge 3s linear infinite;
    transition: .2s;
+   transform: scale(1);
 }
 
 @keyframes nudge {
    0% {
       margin-right: 0px;
-      transform: scale(1);
    }
-   0% {
+   20% {
       margin-right: -8px;
-      transform: scale(1.2);
    }
-   0% {
+   40% {
       margin-right: 0px;
-      transform: scale(1);
+   }
+   60% {
+      margin-right: -8px;
+   }
+   80% {
+      margin-right: 0px;
+   }
+   100% {
+      margin-right: 0px;
    }
 }
 
