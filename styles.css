@@ -23,6 +23,7 @@ Common Classes
 
 .block {
    height: 100vh;
+   background-color: #f5f5f5;
 }
 
 .next {
@@ -48,7 +49,7 @@ Common Classes
    width: 80px;
    background-color: #fff;
    color: aquamarine;
-   position: absolute;
+   position: relative;
    bottom: 50px;
    left: 50px;
    box-shadow: 0 0 8px #262626;
@@ -192,7 +193,7 @@ Landing
 
 /*==================================================
 Vegetable Dash
-==================================================
+==================================================*/
 
 
 
