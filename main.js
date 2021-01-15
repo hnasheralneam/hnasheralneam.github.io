@@ -39,4 +39,37 @@ function buttonVisiblility() {
    else {
       nextButton.style.opacity = "0";
    }
+   where();
 }
+
+function where() {
+   let meetIndicator = document.getElementById("meetIndicator");
+   let vegIndicator = document.getElementById("vegetable-dashIndicator");
+   let comingIndicator = document.getElementById("coming-soonIndicator");
+
+   if (pageLocation === "meet") {
+      meetIndicator.style.backgroundColor = "#262626";
+   }
+   else {
+      meetIndicator.style.backgroundColor = "#d6d6d6";
+   }
+   if (pageLocation === "vegetable-dash") {
+      vegIndicator.style.backgroundColor = "#262626";
+   }
+   else {
+      vegIndicator.style.backgroundColor = "#d6d6d6";
+   }
+   if (pageLocation === "coming-soon") {
+      comingIndicator.style.backgroundColor = "#262626";
+   }
+   else {
+      comingIndicator.style.backgroundColor = "#d6d6d6";
+   }
+}
+
+// Like carousel show progress
+// Transparent text moving background
+
+/* Links */
+
+/* Should have nice hover that shows some content from link */
