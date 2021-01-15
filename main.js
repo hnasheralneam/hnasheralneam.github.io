@@ -67,7 +67,19 @@ function where() {
    }
 }
 
-// Like carousel show progress
+function ind(page) {
+   document.location = "#" + page;
+   pageLocation = page;
+   buttonVisiblility();
+}
+
+
+
+
+
+
+
+
 // Transparent text moving background
 
 /* Links */

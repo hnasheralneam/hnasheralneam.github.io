@@ -124,6 +124,10 @@ Common Classes
                0 0 2.5px #262626;
 }
 
+.progress li:hover {
+   transform: scale(1.2);
+}
+
 #meetIndicator {
    background-color: #262626;
 }
