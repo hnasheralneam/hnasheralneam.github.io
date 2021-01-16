@@ -8,6 +8,10 @@ function next() {
       pageLocation = "vegetable-dash";
    }
    else if (pageLocation === "vegetable-dash") {
+      document.location = "#gold-rush";
+      pageLocation = "gold-rush";
+   }
+   else if (pageLocation === "gold-rush") {
       document.location = "#coming-soon";
       pageLocation = "coming-soon";
    }
@@ -19,9 +23,13 @@ function last() {
       document.location = "#meet";
       pageLocation = "meet";
    }
-   else if (pageLocation === "coming-soon") {
+   else if (pageLocation === "gold-rush") {
       document.location = "#vegetable-dash";
       pageLocation = "vegetable-dash";
+   }
+   else if (pageLocation === "coming-soon") {
+      document.location = "#gold-rush";
+      pageLocation = "gold-rush";
    }
    buttonVisiblility();
 }
@@ -45,6 +53,7 @@ function buttonVisiblility() {
 function where() {
    let meetIndicator = document.getElementById("meetIndicator");
    let vegIndicator = document.getElementById("vegetable-dashIndicator");
+   let goldIndicator = document.getElementById("gold-rushIndicator");
    let comingIndicator = document.getElementById("coming-soonIndicator");
 
    if (pageLocation === "meet") {
@@ -58,6 +67,12 @@ function where() {
    }
    else {
       vegIndicator.style.backgroundColor = "#d6d6d6";
+   }
+   if (pageLocation === "gold-rush") {
+      goldIndicator.style.backgroundColor = "#262626";
+   }
+   else {
+      goldIndicator.style.backgroundColor = "#d6d6d6";
    }
    if (pageLocation === "coming-soon") {
       comingIndicator.style.backgroundColor = "#262626";

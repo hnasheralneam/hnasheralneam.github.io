@@ -330,21 +330,113 @@ Vegetable Dash
 }
 
 /*==================================================
+Gold Rush
+==================================================*/
+
+/* General */
+
+#gold-rush h1 {
+   margin: 25px;
+   letter-spacing: 2px;
+}
+
+.about-gold {
+   margin: 50px;
+   font-size: 120%;
+}
+
+/* Animation */
+
+#gold-rush h1 {
+   background: linear-gradient(90deg, #000, #fff, #000);
+   background-size: 80%;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+#gold-rush:hover h1 {
+   animation: show-text 1.2s 2 forwards;
+}
+
+@keyframes show-text {
+   0% {
+      background-position: -100%;
+   }
+   100% {
+      background-position: 250%;
+   }
+}
+
+/*==================================================
+Coming Soon!
+==================================================*/
+
+.coming {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style-type: none;
+}
+
+.coming li {
+   transition: 0.2s;
+   margin: 0 3px;
+}
+
+.coming:hover li {
+   animation: shake 1s infinite alternate;
+   margin: 0 4px;
+   text-shadow: 0 25px 2px #262626;
+}
+
+@keyframes shake {
+   0% {
+      transform: rotate(10deg) scaleY(1.2);
+   }
+   20% {
+      transform: rotate(-10deg) scaleY(1);
+   }
+   40% {
+      transform: rotate(10deg) scaleY(1.2);
+   }
+   60% {
+      transform: rotate(-10deg) scaleY(1);
+   }
+   80% {
+      transform: rotate(10deg) scaleY(1.2);
+   }
+   100% {
+      transform: rotate(-10deg) scaleY(1);
+   }
+}
+
+.coming:hover li:nth-child(2) {
+   animation-delay: 0.2s;
+}
+
+.coming:hover li:nth-child(4) {
+   animation-delay: 0.2s;
+}
+
+.coming:hover li:nth-child(6) {
+   animation-delay: 0.2s;
+}
+
+.coming:hover li:nth-child(8) {
+   animation-delay: 0.2s;
+}
+
+.coming:hover li:nth-child(10) {
+   animation-delay: 0.2s;
+}
+
+.coming:hover li:nth-child(12) {
+   animation-delay: 0.2s;
+}
+
+/*==================================================
 Main Sectors
 ==================================================
-
-.project {
-   height: 100vh;
-   overflow: scroll;
-   scroll-snap-align: start;
-}
-
-#vegetable-dash {
-   height: 100vh;
-   width: 100%;
-   background-color: #272727;
-   position: relative;
-}
 
 #glish-translate {
    height: 100vh;
@@ -405,14 +497,6 @@ Main Sectors
    scroll-snap-align: start;
    text-align: center;
    overflow-y: hidden;
-}
-
-/*==================================================
-Project Contents
-==================================================
-
-.project h2, .project h4, .project p {
-   margin: 25px 25px;
 }
 
 /*==================================================
