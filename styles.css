@@ -355,7 +355,7 @@ Gold Rush
 }
 
 #gold-rush:hover h1 {
-   animation: show-text 1.2s 2 forwards;
+   animation: show-text 1.2s 3 forwards;
 }
 
 @keyframes show-text {
@@ -364,6 +364,53 @@ Gold Rush
    }
    100% {
       background-position: 250%;
+   }
+}
+
+.gold-text {
+   animation: bounce-out 3s ease-in forwards;
+   transform: translate(1000px, 500px);
+   margin: auto;
+   transition: 0.8s;
+}
+
+#gold-rush:hover .gold-text {
+   animation: bounce-in 3s ease-in forwards;
+}
+
+@keyframes bounce-in {
+   0% {
+      transform: translateX(500px) translateY(-80px) scale(0);
+      width: 500px;
+      opacity: 0.2;
+   }
+   75% {
+      transform: translateX(200px) translateY(80px) scale(0.8);
+      width: 500px;
+      opacity: .8;
+   }
+   100% {
+      transform: translate(0, 0) scale(1);
+      width: 500px;
+      opacity: 1;
+   }
+}
+
+@keyframes bounce-out {
+   0% {
+      transform: translate(0, 0) scale(1);
+      width: 500px;
+      opacity: 1;
+   }
+   25% {
+      transform: translateX(200px) translateY(80px) scale(0.8);
+      width: 500px;
+      opacity: .8;
+   }
+   100% {
+      transform: translateX(500px) translateY(-80px) scale(0);
+      width: 500px;
+      opacity: 0.2;
    }
 }
 
