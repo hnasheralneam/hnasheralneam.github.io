@@ -10,7 +10,7 @@ Main
 html, body {
    margin: 0;
    padding: 0;
-   overflow: hidden;
+   //overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -485,56 +485,6 @@ Coming Soon!
 Main Sectors
 ==================================================
 
-#glish-translate {
-   height: 100vh;
-   width: 100%;
-   background-color: #f5f5f5;
-   position: relative;
-}
-
-#gold-rush {
-   height: 100vh;
-   width: 100%;
-   background-color: #272727;
-   position: relative;
-}
-
-#incremental {
-   height: 100vh;
-   width: 100%;
-   background-color: #f5f5f5;
-   position: relative;
-}
-
-#style {
-   height: 100vh;
-   width: 100%;
-   background-color: #282828;
-   position: relative;
-}
-
-#hillside {
-   height: 100vh;
-   width: 100%;
-   background-color: #f5f5f5;
-   position: relative;
-}
-
-#schoolarly-bay {
-   height: 100vh;
-   width: 100%;
-   background-color: #282828;
-   position: relative;
-}
-
-#squirrel {
-   height: 100vh;
-   width: 100%;
-   background-color: #f5f5f5;
-   position: relative;
-   scroll-snap-align: start;
-}
-
 #personal {
    height: auto;
    width: 100%;
@@ -547,7 +497,7 @@ Main Sectors
 }
 
 /*==================================================
-Other
+Animations
 ==================================================
 
 @keyframes heavenly-glow {
@@ -619,62 +569,18 @@ Other
 }
 
 /*==================================================
-Display Images
+Personal
 ==================================================
 
-.display-image-dark {
-   width: 150px;
-   position: absolute;
-   bottom: 30px;
-   right: 60px;
-   border-radius: 50%;
-   transition: all .8s;
-   animation: darkness-grows 3s infinite;
+.will-not-find-me-at {
+   font-family: Nunito;
 }
-
-.display-image-dark:hover {
-   transform: rotateX(360deg);
-}
-
-.display-image-light {
-   width: 150px;
-   height: 150px;
-   position: absolute;
-   bottom: 30px;
-   right: 60px;
-   border-radius: 50%;
-   transition: all .8s;
-   animation: heavenly-glow 3s infinite;
-}
-
-.display-image-light:hover {
-   transform: rotateY(360deg);
-}
-
-#schoolarly-bay img:nth-child(2) {
-   bottom: 25%;
-   left: 5%;
-   width: 175px;
-   height: 175px;
-}
-
-#schoolarly-bay img:nth-child(3) {
-   bottom: 20%;
-   right: 10%;
-}
-
-#schoolarly-bay img:nth-child(4) {
-   bottom: 10%;
-   left: 25%;
-   width: 125px;
-   height: 125px;
-}
-
-/*==================================================
-End Section
-==================================================
 
 .find-me {
+   margin: 50px 50px 0 50px;;
+}
+
+.will-not-find-me-at {
    display: flex;
    justify-content: center;
    text-align: center;
@@ -682,7 +588,7 @@ End Section
    margin: auto;
 }
 
-.find-me a {
+.will-not-find-me-at a {
    width: 90px;
    height: 90px;
    background-color: #f1f1f1;
@@ -702,12 +608,12 @@ i {
    margin-top: 35%;
 }
 
-.find-me a:hover i {
-   transform: scale(1.5);
+.will-not-find-me-at a:hover i {
+   transform: scale(1.5) rotate(360deg);
    color: whitesmoke;
 }
 
-.find-me a:hover {
+.will-not-find-me-at a:hover {
    background-color: #262626;
 }
 
@@ -720,7 +626,18 @@ i {
    margin-bottom: 75px;
 }
 
+.hr {
+   display: block;
+   width: 100%;
+   background-color: #262626;
+   opacity: .2;
+   margin: 25px 75px;
+}
+
 hr {
    display: block;
    width: 100%;
+   background-color: #262626;
+   opacity: 0;
+   margin: 0 25px;
 }
