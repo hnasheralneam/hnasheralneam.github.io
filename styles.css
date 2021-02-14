@@ -663,3 +663,33 @@ Right Click Menu
    border: 1px solid #ebebeb;
    border-bottom: 0;
 }
+
+/*==========================================================
+Links
+==========================================================*/
+
+a {
+   color: lightblue;
+   text-decoration: none;
+   position: relative;
+}
+
+.no-link:after {
+   display: none;
+}
+
+a:after {
+   content: "";
+   display: block;
+   height: 1.5px;
+   left: 50%;
+   position: absolute;
+   background: lightblue;
+   transition: all .5s;
+   width: 0;
+}
+
+a:hover:after {
+   width: 100%;
+   left: 0;
+}
