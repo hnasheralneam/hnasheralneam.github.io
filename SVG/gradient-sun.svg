@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="135mm"
+   height="135mm"
+   viewBox="0 0 135 135"
+   version="1.1"
+   id="svg3531"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="gradient-sun.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3533"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     lock-margins="true"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:zoom="0.60221661"
+     inkscape:cx="-291.42338"
+     inkscape:cy="237.45609"
+     inkscape:window-width="1920"
+     inkscape:window-height="1047"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     width="135mm" />
+  <defs
+     id="defs3528">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#Sun___Lightning"
+       id="linearGradient3420"
+       x1="823.86969"
+       y1="-30.709837"
+       x2="943.86969"
+       y2="-30.709837"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-665.04909,221.41198)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="Sun___Lightning">
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1;"
+         offset="0"
+         id="stop3849" />
+      <stop
+         style="stop-color:#ffe300;stop-opacity:0.96470588"
+         offset="1"
+         id="stop3851" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-151.32048,-123.20216)">
+    <ellipse
+       style="fill:none;stroke:url(#linearGradient3420);stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3130-8"
+       cx="218.82048"
+       cy="190.70216"
+       rx="55.41473"
+       ry="55.414711" />
+  </g>
+</svg>
