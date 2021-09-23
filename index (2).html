@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon"/>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+      <script src="main.js" charset="utf-8" defer></script>
+      <link rel="stylesheet" href="styles.css">
+      <title>Meet Squirrel</title>
+   </head>
+   <body>
+      <!-- Meet Squirrel -->
+      <div class="landing" id="meet">
+         <div class="text">
+            <br>
+            <h1 class="hi">
+               Hi! I'm Squirrel!
+            </h1>
+            <br><br>
+            <p class="about-me">I am not a web developer, but I do spend a lot of time programming. I work for Squirrel Enterprise as CEO, CTO, developer, designer, and one of the only two employees. I like CSS transitions and I think everyone should use them. I know HTML, CSS, JavaScript, and Electron, and am currently in the process of learing React and Node. I know a bit of Python. I like SVGs and Linux and you should not have come here. You can see my GitHub account <a class="hover-link" href="https://github.com/Squirrel-314">here</a>, and check out all the organizations I am in alone. Like my repositories? Please put up issues for any mistakes, and if you have a suggestion, also make an issue. No, I didn't mean it that way, it's just easier for me to see. <b>If you would like to use my services, do it through Squirrel Enterprises - there is a 98% chance I will complete the work.</b>(Did you notice the font?)</p>
+         </div>
+         <div class="next" id="next" onclick="next()">
+            <span class="arrow">&#10230;</span>
+         </div>
+         <ul class="progress">
+            <li id="meetIndicator" onclick="ind('meet')"></li>
+            <li id="vegetable-dashIndicator" onclick="ind('vegetable-dash')"></li>
+            <li id="gold-rushIndicator" onclick="ind('gold-rush')"></li>
+            <li id="coming-soonIndicator" onclick="ind('coming-soon')"></li>
+         </ul>
+      </div>
+      <!-- Vegetable Dash -->
+      <div class="block" id="vegetable-dash">
+         <div class="last" id="back" onclick="last()">
+            <span class="arrow">&#10229;</span>
+         </div>
+         <div class="text">
+            <br>
+            <h1 class="meet-vegetable">
+               <ul class="smokey">
+                  <li>V</li><li>e</li><li>g</li><li>e</li><li>t</li><li>a</li><li>b</li><li>l</li><li>e</li><li class="space"></li><li>D</li><li>a</li><li>s</li><li>h</li><li>!</li>
+               </ul>
+            </h1>
+            <p class="about-vegetable" onmouseover="window.open('https://vegetable-dash-beta.herokuapp.com/', '_blank');">My newest and greatest JavaScript browser game! With all the high quality images you could ever wish for, this game is simply fabulous! I recommend you try it! No, I insist you try it! Y'know what, I'm sending you there anyway! You can play the game <a href="https://vegetable-dash.herokuapp.com/">here</a>, the beta version <a href="https://vegetable-dash-beta.herokuapp.com/">here</a>, or visit the GitHub repository <a href="https://github.com/squirrel-314/vegetable-dash">here</a>!</p>
+         </div>
+      </div>
+      <!-- Gold Rush -->
+      <div class="block" id="gold-rush">
+         <div class="text">
+            <br>
+            <h1>Gold Rush!</h1>
+            <p class="about-gold gold-text">A simple-but-promising incremental game, made with JavaScript. This was my first game, and recently had a complete redo, with many new features which you will have to find out about yourself! You can play it <a href="https://squirrel-314.github.io">here</a>, or check ou the GitHub repository <a href="https://github.com/Squirrel-314/squirrel-314.github.io">here</a>, and if you use Linux, you can download the 0.9 version app <a href="download-gold-rush.html">here</a>!</p>
+         </div>
+      </div>
+
+      <!-- Glish Translator
+      <div class="block" id="glish-translate">
+         <div class="text">
+            <br>
+            <h1>Glish Translate</h1>
+            <p class="about-glish">Have you ever had trouble with all of that slang and inelegible texting abbrevations? I certiantly have, but I feel I may be alone in this. Anyway, this Chrome extension is a dictonary that translates glish, more commonly know as text language. You can find the GitHub repository <a href="https://github.com/Squirrel-314/glish-translate">here</a>.</p>
+         </div>
+      </div> -->
+
+      <!-- Incremental
+      <div class="block" id="incremental">
+         <div class="text">
+            <br>
+            <h1>Incremental</h1>
+            <p class="incremental-text">A simple incremental game template made with JavaScript, set up as a four lesson class. Please feel free to copy the code, but I'd prefer you changed the theme or link this site. You can find the GitHub repository <a href="https://github.com/Squirrel-314/incremental">here</a>.</p>
+         </div>
+      </div> -->
+
+      <!-- Style
+      <div class="block" id="style">
+         <div class="text">
+            <br>
+            <h1>Style</h1>
+            <p class="style-text">Here we do things in <strong>style!</strong> Check out the nice CSS effects and apply them to your own websites! You can find the GitHub repository <a href="https://github.com/Squirrel-314/style">here</a>, or visit the site <a href="https://squirrel-314.github.io/style/">here</a>.</p>
+         </div>
+      </div> -->
+
+      <!-- Hillside Township
+      <div class="block" id="hillside-township">
+         <div class="text">
+            <br>
+            <h1>Hillside Township</h1>
+            <p class="hillside-text">Here we do things in <strong>style!</strong> Check out the nice CSS effects and apply them to your own websites! You can find the GitHub repository <a href="https://github.com/Squirrel-314/style">here</a>, or visit the site <a href="https://squirrel-314.github.io/style/">here</a>.</p>
+         </div>
+      </div> -->
+
+      <!-- The Schoolarly Bay
+      <div class="block" id="schoolarly-bay">
+         <div class="text">
+            <br>
+            <h1>The Schoolarly Bay</h1>
+            <p class="schoolarly-text">Here we do things in <strong>style!</strong> Check out the nice CSS effects and apply them to your own websites! You can find the GitHub repository <a href="https://github.com/Squirrel-314/style">here</a>, or visit the site <a href="https://squirrel-314.github.io/style/">here</a>.</p>
+         </div>
+      </div> -->
+
+      <!-- Coming Soon -->
+      <div class="block" id="coming-soon">
+         <div class="text">
+            <br><br>
+            <h1>
+               <ul class="coming">
+                  <li>C</li>
+                  <li>O</li>
+                  <li>M</li>
+                  <li>I</li>
+                  <li>N</li>
+                  <li>G</li>
+                  <li class="space"></li>
+                  <li>S</li>
+                  <li>O</li>
+                  <li>O</li>
+                  <li>N</li>
+                  <li>!</li>
+               </ul>
+            </h1>
+            <br><br>
+            <h2>While you are waiting, check out these sites!</h2>
+            <br><a href="https://github.com/Squirrel-314/numtoword">numtoword on GitHub</a>
+            <br><a href="https://github.com/Squirrel-314/glish-translate">Glish Translate on GitHub</a>
+            <br><a href="https://github.com/Squirrel-314/incremental">Incremental on GitHub</a>
+            <br><a href="https://github.com/Squirrel-314/style">Style on GitHub</a> <a href="https://squirrel-314.github.io/style/">Style</a>
+            <br><a href="https://github.com/hillside-township/hillside-township.github.io">Hillside Township on GitHub</a> <a href="https://hillside-township.github.io">Hillside</a>
+            <br><a href="https://github.com/schoolarlybay/schoolarlybay.github.io">The Schoolarly Bay on GitHub</a> <a href="https://schoolarlybay.github.io/">The Schoolarly Bay</a>
+         </div>
+         <div class="will-not-find-me-at">
+            <h1 class="find-me">You won't find me at</h1>
+            <hr class="hr">
+            <a class="nothing-link" href="https://www.reddit.com/"><i class="fab fa-reddit"></i></a>
+            <a class="nothing-link" href="https://www.twitch.tv/"><i class="fab fa-twitch"></i></a>
+            <a class="nothing-link" href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a>
+            <a class="nothing-link" href="https://www.squarespace.com/"><i class="fab fa-squarespace"></i></a>
+            <a class="nothing-link" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a class="nothing-link" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a class="nothing-link" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a class="nothing-link" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a class="nothing-link" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a class="nothing-link" href="https://medium.com/"><i class="fab fa-medium"></i></a>
+            <hr class="hr-2">
+            <h1 class="find-me">You will find me at</h1>
+            <hr class="hr">
+            <a class="nothing-link" href="https://github.com/Squirrel-314"><i class="fab fa-github"></i></a>
+            <a class="nothing-link" href="https://stackoverflow.com/users/14818357/squirrel"><i class="fab fa-stack-overflow"></i></a>
+            <a class="nothing-link" href="https://codepen.io/squirrel-314"><i class="fab fa-codepen"></i></a>
+         </div>
+         <div class="personal" style="text-align: center;">
+            <p>Emails | <a href="mailto:thehillsidetownship@gmail.com?subject=feedback">thehillsidetownship@gmail.com</a>, <a href="mailto:iloveplantsandfungi@gmail.com?subject=feedback">iloveplantsandfungi@gmail.com</a></p><br>
+            <p>Address | Oak forest, acorn path, that tree.</p><br>
+            <img title="I like rainbows" id="linux-rainbow" src="Images/linux.png" alt="">
+         </div>
+      </div>
+   </body>
+   <div id="menu">
+      <li class="menu-links"><a href="https://squirrel-314.github.io/vegetable-dash/index.html">Check this out!</a></li>
+      <li class="menu-links"><a href="https://squirrel-314.github.io">And this!</a></li>
+      <li>You won't regret it!</li>
+      <li>Probably.</li>
+      <hr>
+      <li class="menu-links"><a href="https://github.com/Squirrel-Enterprise/squirrel-enterprise.github.io">GitHub</a></li>
+   </div>
+</html>
