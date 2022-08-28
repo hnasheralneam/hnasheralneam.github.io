@@ -1,2 +1,5 @@
-Gold Rush-darwin-x64.zip
-Gold Rush-win32.zip
+node_modules
+package.json
+package-lock.json
+tailwind.config.js
+tailwind.config.css
