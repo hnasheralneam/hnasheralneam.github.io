@@ -7,12 +7,13 @@
    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
    <link rel="shortcut icon" href="Assets/Images/favicon.png" type="image/x-icon"/>
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
    <!-- Styles -->
    <link rel="stylesheet" href="Assets/Styles/tailwind.css">
    <link rel="stylesheet" href="Assets/Styles/carousel.css">
    <title>Meet Squirrel</title>
 </head>
-<body>
+<body class="">
    <!-- <div>
       <section class="carousel" aria-label="Gallery">
          <ol class="carousel__viewport">
@@ -58,8 +59,8 @@
             <p>Experience</p>
             <p>Tools</p>
             <div class="section-nav">
-               <a href="#links" class="last-section">Go to last slide</a>
-               <a href="#projects" class="next-section">Go to next slide</a>
+               <div onclick="window.location.href = '#links'"  class="movebtn last-section"><span class="material-symbols-rounded">arrow_back</span></div>
+               <div onclick="window.location.href = '#projects'" class="movebtn next-section"><span class="material-symbols-rounded">arrow_forward</span></div>
              </div>
          </div>
          <div class="page-section" id="projects" tabindex="0">
@@ -70,8 +71,8 @@
             <p>digit.js</p>
             <p>Hillside</p>
             <div class="section-nav">
-               <a href="#overview" class="last-section">Go to last slide</a>
-               <a href="#employment" class="next-section">Go to next slide</a>
+               <div onclick="window.location.href = '#overview'" class="movebtn last-section"><span class="material-symbols-rounded">arrow_back</span></div>
+               <div onclick="window.location.href = '#employment'" class="movebtn next-section"><span class="material-symbols-rounded">arrow_forward</span></div>
             </div>
          </div>
          <div class="page-section" id="employment" tabindex="0">
@@ -79,8 +80,8 @@
             <p>Squirrel Enterprise</p>
             <p>Fifth Tribe</p>
             <div class="section-nav">
-               <a href="#projects" class="last-section">Go to last slide</a>
-               <a href="#links" class="next-section">Go to next slide</a>
+               <div onclick="window.location.href = '#projects'" class="movebtn last-section"><span class="material-symbols-rounded">arrow_back</span></div>
+               <div onclick="window.location.href = '#links'" class="movebtn next-section"><span class="material-symbols-rounded">arrow_forward</span></div>
             </div>
          </div>
          <div class="page-section" id="links" tabindex="0">
@@ -88,17 +89,17 @@
             <p>Accounts</p>
             <p>Friend(s)</p>
             <div class="section-nav">
-               <a href="#employment" class="last-section">Go to last slide</a>
-               <a href="#overview" class="next-section">Go to next slide</a>
+               <div onclick="window.location.href = '#employment'"  class="movebtn last-section"><span class="material-symbols-rounded">arrow_back</span></div>
+               <div onclick="window.location.href = '#overview'"  class="movebtn next-section"><span class="material-symbols-rounded">arrow_forward</span></div>
             </div>
          </div>
       </div>
-      <aside class="absolute text-center bottom-2 right-0 left-0">
-         <ol class="navigator-list p-2 bg-gray-100 rounded-full inline-block">
-            <li class="inline-block"><a class="navigator-button bg-white text-gray-900" href="#overview">overview</a></li>
-            <li class="inline-block"><a class="navigator-button bg-white text-gray-900" href="#projects">projects</a></li>
-            <li class="inline-block"><a class="navigator-button bg-white text-gray-900" href="#employment">employment</a></li>
-            <li class="inline-block"><a class="navigator-button bg-white text-gray-900" href="#links">links</a></li>
+      <aside class="absolute text-center bottom-[1.1rem] right-0 left-0">
+         <ol class="navigator-inner navigator-list p-2 rounded-full inline-block" style="background-color: #fbfbfb;">
+            <li class="inline-block"><a class="navigator-button bg-white text-gray-500" href="#overview">overview</a></li>
+            <li class="inline-block"><a class="navigator-button bg-white text-gray-500" href="#projects">projects</a></li>
+            <li class="inline-block"><a class="navigator-button bg-white text-gray-500" href="#employment">employment</a></li>
+            <li class="inline-block"><a class="navigator-button bg-white text-gray-500" href="#links">links</a></li>
          </ol>
       </aside>
    </div>

@@ -23,6 +23,7 @@
    overflow-x: scroll;
    scroll-behavior: smooth;
    scroll-snap-type: x mandatory;
+   overflow: hidden;
 }
 
 .page-section {
@@ -33,14 +34,30 @@
    overflow: auto;
 }
 
-.last-section,
-.next-section {
+/* body {
+   background-color: #fbfbfb;
+} */
+
+.movebtn {
    position: absolute;
    bottom: 0;
+   margin: .75rem;
    width: 4rem;
    height: 4rem;
    font-size: 12px;
    outline: 0;
+   border-radius: 2rem;
+   background-color: #fbfbfb;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: -.2rem -.2rem .4rem #ffffff,
+               .2rem .2rem .4rem #eeeeee;
+}
+
+.movebtn span {
+   font-size: 2.5rem;
+   color: #bdbdbd;
 }
 
 .next-section { right: 0; }
@@ -50,5 +67,16 @@
    width: 8rem;
    border: 0.25rem solid transparent;
    border-radius: 10vh;
-   transition: transform 0.1s;
+   font-family: "Nunito";
+   transition: 0.2s;
+}
+
+.navigator-button:hover {
+   box-shadow: inset 0 .1rem .175rem #f4f4f4,
+               0 .1rem .1rem #eee;
+}
+
+.navigator-inner {
+   box-shadow: -.2rem -.2rem .4rem #fff,
+               .2rem .2rem .4rem #eee;
 }
