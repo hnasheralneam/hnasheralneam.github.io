@@ -34,9 +34,33 @@
    overflow: auto;
 }
 
-/* body {
-   background-color: #fbfbfb;
-} */
+body { 
+   height: 100%;
+   width: 100%;
+   left:0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   position: absolute;
+   background: linear-gradient(45deg, #ff1744cc, #ff9100cc, #ffea00cc, #00e676cc, #2979ffcc, #d500f9cc);
+   background-size: 600% 100vh;
+   animation: rainbow 12s linear infinite;
+}
+
+@keyframes rainbow { 
+   0% { background-position: 0% 0%; }
+   50% { background-position: 100% 0%; }
+   100% { background-position: 0% 0%; }
+}
+
+.hi {
+   margin: .5rem;
+   padding: .5rem 8rem;
+   border-radius: .5rem;
+   display: inline-block;
+   background-color: rgba(255 255 255 / 31%); /* 16 18 27 / 40% */
+   backdrop-filter: blur(20px);
+}
 
 .movebtn {
    position: absolute;
