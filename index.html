@@ -1,149 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-      <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon"/>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-      <script src="main.js" charset="utf-8" defer></script>
-      <link rel="stylesheet" href="styles.css">
-      <title>Meet Editor Rust</title>
-   </head>
-   <body>
-      <!-- Meet me -->
-      <div class="landing" id="meet">
-         <div class="text">
-            <br>
-            <h1 class="hi">
-               Hi! I'm Editor Rust!
-            </h1>
-            <br><br>
-            <p class="about-me">
-               Tools
-               <br>
-               Think of some tool or language, I’ve probably checked it out.
-               I’ve worked with Blender, Unity, LibreOffice, understand Inkscape as much as anyone can, used file types
-               most people meet, messed around with GitLab, GitHub, tried Brave, Firefox, Thunderbird, Edge, Safari, Internet Explorer, loved Chrome and adored Opera, used Windows, ChromeOS and Kubuntu, tried Macs, Android, iPhone and Deepin, use iPad and Windows regularly, iPad by choice, because I love the feel of the Apple ecosystem, but Windows because I have to. I’ve played with Linux distros like Rasbian, would love to try Zorin. Visited Stack Overflow, messed with Mozilla, loved, accepted, then disregarded contemptuously W3Schools, now being a Mozilla Docs snob. Ocasionaly use Codepen, though it’s nothing special. Use Procreate and trying Vectornator, using Apple notes & Obsidian, and lovin’ Freeform. Gmail all the way. Used GitPod and Codespaces. I even tried at a Chrome extension, and can’t wait to try again.
-               Check out C++, worked with and hoping to learn more about Python, and planning to learn Rust. Use JS, HTML, CSS, Tailwind CSS and Node, know Express, use MongoDB, tried React, though I want to learn more, want to check out Angular, and working to learn Vue. And Socket.io is amazing, and I want to do more work with it. I also plan on learning Swift and building some apps.
-               <br>
-               What I do
-               <br>
-               I’m a web developer and designer, and I build open source PWAs while messing about with JavaScript libraries. You might know me as the brilliant developer of Git Organized, or the creator of the world-renowned Chat Experiments. Most likely you haven’t heard of me at all, but I’ll remedy that soon enough, and you’ll grow to rue the day you ever heard of Editor Rust.  
-               <br>
-               Me
-               <br>
-               I’m a fan of Linux and Open Source, and am working on contributing to open source projects. I want to do more with RSS, and am a devoted Markdown fanatic. It’s so simple and efficient! I believe that SVGs are amazing, and their level of integration into the web is stunning. I consider my self a web designer and developer, and try to balance both those roles in my work. My current workflow includes Node, Express, Tailwind CSS and Vanilla JavaScript, and obviously, being a web developer, I rock CSS and HTML. I believe in cloud IDEs because of convenience and that sweet Linux Terminal, and I use Visual Studio Code, no surprise there. I’ve used GitPod, but since for now GitHub Codespaces is free I’m using it, and loving it. I want to learn more about JavaScript libraries and front end web development, as well as touching into cybersecurity, machine learning, and app development. Currently I’m a student, so I don’t get much opportunity to work on my projects, but I still put my best effort into them whenever I can.
-               <br>
-               More
-               <br>
-               See my <a href="https://github.com/editorrust">GitHub</a> <a href="https://stackoverflow.com/users/14818357/editor-rust">Stack Overflow</a> <a href="https://codepen.io/editorrust">CodePen</a>
-               Dev jokes! Checkout my list
-               BFF tildejustin, see his stuff
-               Work
-               My current big projects are Git Organized, a project management and planning tool for developer projects, and an unnamed chat project, meant to be a public space like Twitter without any politics, controversial topics, or hate, a place to make communities to meet people like you, similar to Discord, and a place for private messaging, like Google Chat. I’m so excited for what both of them will become, so please check them out, and consider contributing!
-               Some other work I’ve done include Hillside Township, an imaginary town with a satirical newspaper, where I can exercise my love of creative writing as well as poke fun at politics and technology (Get Hillside Plus, premium citizenship!). Another website is the Schoolarly Bay, a place for research articles. Some of my friends chipped in with articles, and I can’t wait to improve this.
-               I also made my own little JS library called Digit, which writes out long numbers in words. I’m still polishing this, and plan on adding time related features, as well as number animation.
-               Games
-               Some of my really old work include some games I made, ah, back in those days when I wanted to only make games. Ha, the world has turned me into a functional programmer now. These early games include dreadful styling and questionable code, so I suggest you proceed with caution.
-               Gold Rush was my first game, what really got me into JavaScript and web development. It’s an incremental game, inspired by Cookie Clicker, the golden standard for all clicker games. I has exactly one image, and my recent attempts to modernize the UI had made it a disaster zone. Look at me, throwing around terms like UI, and UX, and accessibility. I’m a web designer now, through and through. The game is about as unbalanced math-wise as it gets, and half the ideas are unfinished, but I think I’m done here. Rest easy, Gold Rush.
-               Vegetable Dash was my next big thing, and I’m still kinda proud of it. It really helped me get a grasp on core JavaScript features, and helped push my knowledge forward with Node. The whole thing was image-based, and since I was going through my SVG craze, is a little strange. The code will cause you nightmares if Grampa Jenkins doesn’t. I love you Vegetable Dash, and maybe one day I’ll come back for you…
-               Cookin’ in the Kitchen is one of my more recent works. It was inspired by an old game I used to play, Cooking Fever. I have hopes of making this multiplayer and all, but I probably won’t get to. It was a really cool experiment with drag and drop though.
-               email me at editorrust@gmail.com
-            </p>
-         </div>
-         <div class="next" id="next" onclick="next()">
-            <span class="arrow">&#10230;</span>
-         </div>
-         <ul class="progress">
-            <li id="meetIndicator" onclick="ind('meet')"></li>
-            <li id="vegetable-dashIndicator" onclick="ind('vegetable-dash')"></li>
-            <li id="gold-rushIndicator" onclick="ind('gold-rush')"></li>
-            <li id="coming-soonIndicator" onclick="ind('coming-soon')"></li>
-         </ul>
-      </div>
-      <!-- Vegetable Dash -->
-      <div class="block" id="vegetable-dash">
-         <div class="last" id="back" onclick="last()">
-            <span class="arrow">&#10229;</span>
-         </div>
-         <div class="text">
-            <br>
-            <h1 class="meet-vegetable">
-               <ul class="smokey">
-                  <li>V</li><li>e</li><li>g</li><li>e</li><li>t</li><li>a</li><li>b</li><li>l</li><li>e</li><li class="space"></li><li>D</li><li>a</li><li>s</li><li>h</li><li>!</li>
-               </ul>
-            </h1>
-            <p class="about-vegetable" onmouseover="window.open('https://vegetable-dash-beta.herokuapp.com/', '_blank');">My newest and greatest JavaScript browser game! With all the high quality images you could ever wish for, this game is simply fabulous! I recommend you try it! No, I insist you try it! Y'know what, I'm sending you there anyway! You can play the game <a href="https://vegetable-dash.herokuapp.com/">here</a>, the beta version <a href="https://vegetable-dash-beta.herokuapp.com/">here</a>, or visit the GitHub repository <a href="https://github.com/editorrust/vegetable-dash">here</a>!</p>
-         </div>
-      </div>
-      <!-- Gold Rush -->
-      <div class="block" id="gold-rush">
-         <div class="text">
-            <br>
-            <h1>Gold Rush!</h1>
-            <p class="about-gold gold-text">A simple-but-promising incremental game, made with JavaScript. This was my first game, and recently had a complete redo, with many new features which you will have to find out about yourself! You can play it <a href="https://goldrush.cyclic.app">here</a>, or check ou the GitHub repository <a href="https://github.com/editorrust/gold-rush">here</a>, and if you use Linux, you can download the 0.9 version app <a href="download-gold-rush.html">here</a>!</p>
-         </div>
-      </div>
-
-      <!-- Coming Soon -->
-      <div class="block" id="coming-soon">
-         <div class="text">
-            <br><br>
-            <h1>
-               <ul class="coming">
-                  <li>C</li>
-                  <li>O</li>
-                  <li>M</li>
-                  <li>I</li>
-                  <li>N</li>
-                  <li>G</li>
-                  <li class="space"></li>
-                  <li>S</li>
-                  <li>O</li>
-                  <li>O</li>
-                  <li>N</li>
-                  <li>!</li>
-               </ul>
-            </h1>
-            <br><br>
-            <h2>While you are waiting, check out these sites!</h2>
-            <br><a href="https://github.com/editorrust/digit">digit on GitHub</a>
-            <br><a href="https://github.com/editorrust/glish-translate">Glish Translate on GitHub</a>
-            <br><a href="https://github.com/editorrust/style">Style on GitHub</a> <a href="https://editorrust.github.io/style/">Style</a>
-            <br><a href="https://github.com/hillside-township/hillside-township.github.io">Hillside Township on GitHub</a> <a href="https://hillside-township.github.io">Hillside</a>
-            <br><a href="https://github.com/schoolarlybay/schoolarlybay.github.io">The Schoolarly Bay on GitHub</a> <a href="https://schoolarlybay.github.io/">The Schoolarly Bay</a>
-         </div>
-         <div class="will-not-find-me-at">
-            <h1 class="find-me">You won't find me at</h1>
-            <hr class="hr">
-            <a class="nothing-link" href="https://www.reddit.com/"><i class="fab fa-reddit"></i></a>
-            <a class="nothing-link" href="https://www.twitch.tv/"><i class="fab fa-twitch"></i></a>
-            <a class="nothing-link" href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a>
-            <a class="nothing-link" href="https://www.squarespace.com/"><i class="fab fa-squarespace"></i></a>
-            <a class="nothing-link" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-            <a class="nothing-link" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-            <a class="nothing-link" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-            <a class="nothing-link" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-            <a class="nothing-link" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a class="nothing-link" href="https://medium.com/"><i class="fab fa-medium"></i></a>
-            <hr class="hr-2">
-            <h1 class="find-me">You will find me at</h1>
-            <hr class="hr">
-            <a class="nothing-link" href="https://github.com/editorrust"><i class="fab fa-github"></i></a>
-            <a class="nothing-link" href="https://stackoverflow.com/users/14818357/squirrel"><i class="fab fa-stack-overflow"></i></a>
-            <a class="nothing-link" href="https://codepen.io/squirrel-314"><i class="fab fa-codepen"></i></a>
-         </div>
-         <div class="personal" style="text-align: center;">
-            <p>Emails | <a href="mailto:editorrust@gmail.com?subject=feedback">editorrust@gmail.com</a>, <a href="mailto:hamza.elabi1@gmail.com?subject=feedback">hamza.elabi1@gmail.com</a></p><br>
-            <p>Address | Oak forest, acorn path, that tree.</p><br>
-            <img title="I like rainbows" id="linux-rainbow" src="Images/linux.png" alt="">
-         </div>
-      </div>
-   </body>
-   <div id="menu">
-      <li class="menu-links"><a href="https://editorrust.github.io/vegetable-dash/">Check this out!</a></li>
-      <li class="menu-links"><a href="https://editorrust.github.io/gold-rush/">And this!</a></li>
-      <li>You won't regret it!</li>
-      <li>Probably.</li>
+<html lang="en">
+<head>
+   <link rel="shortcut icon" type="image/x-icon" href="Icons/race.png">
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+   <title>Editor Rust</title>
+</head>
+<body>
+   <div class="progress-parent">
+      <div class="progress"></div>
    </div>
+
+   <h1 class="title">Hi! I'm Editor Rust.</h1>
+   <center><em>This site is still under active construction, and yes, this is inside a <code>center</code> tag.</em></center>
+   <h2>Tools</h2>
+   <p>Think of some tool or language, I've probably checked it out. I've worked with Blender, Unity, LibreOffice, understand Inkscape as much as anyone can, used file types most people meet, messed around with GitLab, GitHub, tried Brave, Firefox, Thunderbird, Edge, Safari, Internet Explorer, loved Chrome and adored Opera, used Windows, ChromeOS and Kubuntu, tried Macs, Android, iPhone and Deepin, use iPad and Windows regularly, iPad by choice, because I love the feel of the Apple ecosystem, but Windows because I have to. I've played with Linux distros like Rasbian, would love to try Zorin. Visited Stack Overflow, messed with Mozilla, loved, accepted, then disregarded contemptuously W3Schools, now being a Mozilla Docs snob. Ocasionaly use Codepen, though it's nothing special. Use Procreate and trying Vectornator, using Apple notes & Obsidian, and lovin' Freeform. Gmail all the way. Used GitPod and Codespaces. I even tried at a Chrome extension, and can't wait to try again. Check out C++, worked with and hoping to learn more about Python, and planning to learn Rust. Use JS, HTML, CSS, Tailwind CSS and Node, know Express, use MongoDB, tried React, though I want to learn more, want to check out Angular, and working to learn Vue. And Socket.io is amazing, and I want to do more work with it. I also plan on learning Swift and building some apps.</p>
+   <h2>What I do</h2>
+   <p>I'm a web developer and designer, and I build open source PWAs while messing about with JavaScript libraries. You might know me as the brilliant developer of Git Organized, or the creator of the world-renowned Chat Experiments. Most likely you haven't heard of me at all, but I'll remedy that soon enough, and you'll grow to rue the day you ever heard of Editor Rust.</p>
+   <h2>About me</h2>
+   <p>I'm a fan of Linux and Open Source, and am working on contributing to open source projects. I want to do more with RSS, and am a devoted Markdown fanatic. It's so simple and efficient! I believe that SVGs are amazing, and their level of integration into the web is stunning. I consider my self a web designer and developer, and try to balance both those roles in my work. My current workflow includes Node, Express, Tailwind CSS and Vanilla JavaScript, and obviously, being a web developer, I rock CSS and HTML. I believe in cloud IDEs because of convenience and that sweet Linux Terminal, and I use Visual Studio Code, no surprise there. I've used GitPod, but since for now GitHub Codespaces is free I'm using it, and loving it. I want to learn more about JavaScript libraries and front end web development, as well as touching into cybersecurity, machine learning, and app development. Currently I'm a student, so I don't get much opportunity to work on my projects, but I still put my best effort into them whenever I can.</p>
+   <h2>More</h2>
+
+   <p>Dev jokes! Checkout my list <a href="https://docs.google.com/document/d/e/2PACX-1vRKinOJRXxrcpdMauNaTAzLNVHom4OkadGgdm6ja82330EJFr_5FRw4ThSj71GcjG9Ll_7jh-7mox95/pub">here</a></p>
+   <p>BFF <a href="https://github.com/tildejustin">tildejustin</a>, see his stuff</p>
+
+   <h2>Work</h2>
+   <p>My current big projects are Git Organized, a project management and planning tool for developer projects, and an unnamed chat project, meant to be a public space like Twitter without any politics, controversial topics, or hate, a place to make communities to meet people like you, similar to Discord, and a place for private messaging, like Google Chat. I'm so excited for what both of them will become, so please check them out, and consider contributing!</p>
+   <p>Some other work I've done include Hillside Township, an imaginary town with a satirical newspaper, where I can exercise my love of creative writing as well as poke fun at politics and technology (Get Hillside Plus, premium citizenship!). Another website is the Schoolarly Bay, a place for research articles. Some of my friends chipped in with articles, and I can't wait to improve this.</p>
+   <p>I also made my own little JS library called Digit, which writes out long numbers in words. I'm still polishing this, and plan on adding time related features, as well as number animation.</p>
+   <h2>Games</h2>
+   <p>Some of my really old work include some games I made, ah, back in those days when I wanted to only make games. Ha, the world has turned me into a functional programmer now. These early games include dreadful styling and questionable code, so I suggest you proceed with caution.</p>
+   <p>Gold Rush was my first game, what really got me into JavaScript and web development. It's an incremental game, inspired by Cookie Clicker, the golden standard for all clicker games. It has exactly one image, and my recent attempts to modernize the UI had made it a disaster zone. Look at me, throwing around terms like UI, and UX, and accessibility. I'm a web designer now, through and through. The game is about as unbalanced math-wise as it gets, and half the ideas are unfinished, but I think I'm done here. Rest easy, Gold Rush.</p>
+   <p>Vegetable Dash was my next big thing, and I'm still kinda proud of it. It really helped me get a grasp on core JavaScript features, and helped push my knowledge forward with Node. The whole thing was image-based, and since I was going through my SVG craze, is a little strange. The code will cause you nightmares if Grampa Jenkins doesn't. I love you Vegetable Dash, and maybe one day I'll come back for you...</p>
+   <p>Cookin' in the Kitchen is one of my more recent works. It was inspired by an old game I used to play, Cooking Fever. I have hopes of making this multiplayer and all, but I probably won't get to. It was a really cool experiment with drag and drop though.</p>
+
+   <div class="footer">
+      <div>
+         <h2>Find me</h2>
+         <p>My Github -> <a href="https://github.com/editorrust">GitHub</a></p>
+         <p class="faded-footer">I love GitHub, and host all my projects on it</p>
+         <p>Stack Overflow -> <a href="https://stackoverflow.com/users/14818357/editor-rust">Stack Overflow</a></p>
+         <p class="faded-footer">I kinda hate Stack Overflow because they blocked me from doing anything</p>
+         <p>CodePen -> <a href="https://codepen.io/editorrust">CodePen</a></p>
+         <p class="faded-footer">I don't use this account very often, but here it is</p>
+      </div>
+      <div>
+         <h2>Email me</h2>
+         <p>My developer account -> <a href="mailto:editorrust@gmail.com">editorrust@gmail.com</a></p>
+         <p>My personal account -> <a href="mailto:hamza.elabi1@gmail.com">hamza.elabi1@gmail.com</a></p>
+      </div>
+   </div>
+</body>
+<script src="main.js"></script>
 </html>
