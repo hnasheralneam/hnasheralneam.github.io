@@ -52,8 +52,36 @@ p {
    margin: .5rem 2rem;
 }
 
+button {
+   padding: .2rem .5rem;
+   font-size: 1.1rem;
+   color: #fff;
+   background-color: var(--theme-color);
+   border: solid .2rem var(--theme-color);
+   border-radius: .5rem;
+   box-shadow: 0 .1rem .2rem #ddd;
+   transition: .15s;
+}
+
+button:hover {
+   color: var(--theme-color);
+   background-color: transparent;
+}
+
+button:active {
+   transform: scale(.98);
+}
+
 a {
    color: var(--theme-color);
+}
+
+.funsies {
+   padding: .5rem 2rem;
+}
+
+.funsies p {
+   margin: 0 .2rem .8rem .2rem;
 }
 
 .footer {
@@ -76,6 +104,7 @@ a {
    position: fixed;
    top: 0;
    left: 0;
+   z-index: 10;
 }
 
 .progress {
