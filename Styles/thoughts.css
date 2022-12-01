@@ -1,3 +1,7 @@
+body {
+   background-color: #FEFDFA;
+}
+
 .home {
    margin: 1.8rem 2rem 0 0;
    float: right;
@@ -13,14 +17,27 @@
    transition: .2s;
 }
 
+.article {
+   margin: 2rem auto 4rem auto;
+   padding: 0 2rem;
+   max-width: 700px;
+}
+
+.article h2 {
+   color: #888;
+}
+
 .article p {
+   margin-bottom: .4rem;
    text-indent: 1rem;
-   line-height: 1.2rem;
+   line-height: 1.3rem;
+   font-size: 1.1rem;
+   font-family: serif;
 }
 
 @media (prefers-color-scheme: dark) {
    body {
-      background-color: #222;
+      background-color: #232326;
       color: #ddd;
    }
 }
