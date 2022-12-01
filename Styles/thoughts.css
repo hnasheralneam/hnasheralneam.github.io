@@ -1,0 +1,33 @@
+.home {
+   margin: 1.8rem 2rem 0 0;
+   float: right;
+   color: #888;
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 1.5rem;
+   font-family: monospace;
+}
+
+.content {
+   font-family: "Ubuntu Mono", monospace;
+   transition: .2s;
+}
+
+.article p {
+   text-indent: 1rem;
+   line-height: 1.2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+   body {
+      background-color: #222;
+      color: #ddd;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+   .content {
+     padding: 0 6rem;
+     line-height: 1.7rem;
+   }
+}
