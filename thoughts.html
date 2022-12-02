@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <meta name="viewport" content="width=device-width">
+   <meta name="description" content="The developer Editor Rust's personal website!">
    <link rel="shortcut icon" type="image/x-icon" href="Icons/race.png">
    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -14,7 +16,7 @@
 
    <div class="content">
       <div class="article">
-         <h1>The iMessage Lockin</h1>
+         <h1 id="imessage-lockin" onclick="copy('imessage-lockin')">The iMessage Lockin</h1>
          <h2>Dec 1 2022</h2>
          <p>Apple is known for its "walled garden"; a wonderful lineup of devices that work seamlessly together. But while their products may be great, they don't quite make up for the company's shortcomings, especially their refusal to play nice with other devices. All tech companies have some anti competition problems, like Microsoft trying to be Apple with Windows 11, Office, and Teams. May Steve Jobs protect us all from that horrible future. Every company puts their apps first, pre-installs bloatware, sorry, <i>software</i>, and generally tries to be your one go-to service provider. To make it clear, this is totally a problem that needs to be dealt with, and we can't let Microsoft, Google, Apple or anybody to have a completely locked system, no matter how wonderful. But at least while Android phones are competitors, they all use the same basic standards such as ports and messaging systems.</p>
          <p>Let's start at the beginning. While the concept of SMS had been conceived in the early 80s, it wasn't until the 90s that it was actually implemented. SMS stands for Short Message Service, and supports plain text messages of up to 160 characters. This worked for a while, but by 2002 people wanted more out of messaging, so MMS, Multimedia Messaging Service, was created. It had support for images, links, videos, files, emojis, and more, and was pretty much globally adopted. These systems worked, but in 2007 another standard was created, RCS, or Rich Communication Services, which was officially released in 20016. It standardized features that companies had to individually implement before, as well as adding features from popular messaging apps, like reactions and other small additions that created a smooth texting experience. Additionally, it has much improved security, which is important when texting cross-platform (iMessage uses its own encryption). Basically, it wasn't revolutionary, but it was a great and necessary effort at improving and standardizing texting.</p>
@@ -25,7 +27,7 @@
          <p>So far, this has been a one-sided battle. Apple is happy with its messaging monopoly, and has no reason to change anything. Google is not the hero though. While RCS is a great standard and it would benefit all users if Apple adopted it, this isn't about users. I believe in this situation the people at Google really care about users, but that isn't always the case. If they <i>really</i> cared about users, maybe their Pixel devices would cooperate with other devices, or Google wouldn't push their own products so much. This time though, they're right. #GetTheMessage!</p>
       </div>
       <div class="article">
-         <h1>Reject Folding Phones</h1>
+         <h1 id="reject-folding-phones" onclick="copy('reject-folding-phones')">Reject Folding Phones</h1>
          <h2>Dec 1 2022</h2>
          <p>Unless you've been living under a rock for the last few years, you should have noticed a growing trend for foldable phones. Perhaps you thought it was cool, maybe you even considered buying one before you noticed the price. But why could anyone hate them? I'll tell you why it's a bad idea for everyone involved.</p>
          <p>Let's start from the developer side of things. When building an interface, it has to be optimized for different screens. The two difficulties that arise are scale and aspect ratio. You can develop a website or app for a computer, and it won't take much scaling down to fit on a tablet or larger monitor. Some tweaks, yes, but nothing huge. Now developing for phones is different. Multiple OSs aside, these devices are tiny. And even if you turn the device into landscape mode, which no one does, the aspect ratio of the device is completely different, making the UI seem stretched. But that's not all, because every phone maker is determined to make all their devices have a unique shape, and thus, a new screen to be optimized for. You can already see how this is a nightmare, even without counting the separate code bases you'd need for each system, but it was about to get far worse.</p>
@@ -53,4 +55,30 @@
       </div>
    </div>
 </body>
+<script>
+let url = document.location.href;
+
+function copy(txt) {
+   let link = `${url}#${txt}`;
+   navigator.clipboard.writeText(link).then(() => {
+       console.log("Copied link!");
+   }, () => { console.log("Error copying link."); });
+   let alert = document.createElement("DIV");
+   alert.textContent = "Copied Link to Heading!";
+   alert.classList.add("tempAlert");
+   document.body.appendChild(alert);
+   setTimeout(() => {
+      alert.style.opacity = "1";
+      alert.style.bottom = ".5rem";
+   }, 200);
+   setTimeout(() => {
+      alert.style.opacity = "0";
+      alert.style.bottom = "-10rem";
+   }, 4200);
+   setTimeout(() => {
+      alert.remove();
+   }, 4400);
+
+}
+</script>
 </html>
