@@ -27,6 +27,7 @@ a {
    color: #fff;
    border-bottom: solid .4rem var(--theme-color);
    font-family: "Nunito", "Times New Roman", Times, serif;
+   overflow: auto;
 }
 
 .footer h2 {
@@ -62,6 +63,12 @@ a {
 
 .faded-footer {
    color: #bbb;
+}
+
+@media only screen and (max-width: 750px) {
+   .footer {
+      grid-template-columns: auto;
+   }
 }
 
 @media (prefers-color-scheme: dark) {
