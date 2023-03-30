@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width">
+   <meta name="description" content="The developer Editor Rust's personal website!">
+   <link rel="shortcut icon" type="image/x-icon" href="Icons/race.png">
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Styles/styles.css">
+   <link rel="stylesheet" href="Styles/roadmap.css">
+   <title>Roadmap | Editor Rust</title>
+</head>
+<body>
+   <div class="header">
+      <h1>Projects</h1>
+      <h2>What I'm working on</h2>
+      <a href="/">go home</a>
+      <div class="tabswitcher">
+         <div class="tabswitcherbtn switcher-active activeswitcher" onclick="switchtabto('active')">Active</div>
+         <div class="tabswitcherbtn switcher-timeline" onclick="switchtabto('timeline')">Timeline</div>
+         <div class="tabswitcherbtn switcher-roadmap" onclick="switchtabto('roadmap')">Roadmap</div>
+      </div>
+   </div>
+   <div class="sections">
+      <div class="section active-section activetab" id="active-section">
+         one
+         <p>hi</p>
+      </div>
+      <div class="section timeline-section" id="timeline-section">
+         <div class="project-block">
+            <div class="img-parent">
+               <img src="https://goldrush.cyclic.app/Images/astroid.png" alt="Gold Rush astroid">
+            </div>
+            <div class="text-block">
+               <h3 class="date">Dec 7 2020</h3>
+               <h2 class="title">Gold Rush</h2>
+               <p class="desc">hmfmdnnsh</p>
+            </div>
+         </div>
+         <div class="project-block">
+            <div class="text-block">
+               <h3 class="date">Jan 1 2021</h3>
+               <h2 class="title">Vegetable Dash</h2>
+               <p class="desc">keuiahshbm</p>
+            </div>
+            <div class="img-parent">
+               <img src="https://vegetabledash.cyclic.app/Images/Plots/plot.png" alt="Vegetable Dash plot">
+            </div>
+         </div>
+      </div>
+      <div class="section roadmap-section" id="roadmap-section">
+         three
+         <p>hi</p>
+      </div>
+   </div>
+   <div class="footer">
+      <div>
+         <h2>Find me</h2>
+         <p>My Github -> <a href="https://github.com/editorrust">GitHub</a></p>
+         <p class="faded-footer">GitHub is great, I host all my projects on it</p>
+         <p>Stack Overflow -> <a href="https://stackoverflow.com/users/14818357/editor-rust">Stack Overflow</a></p>
+         <p class="faded-footer">I kinda hate Stack Overflow because they blocked me from doing anything</p>
+         <p>CodePen -> <a href="https://codepen.io/editorrust">CodePen</a></p>
+         <p class="faded-footer">I don't use this account very often, but here it is</p>
+      </div>
+      <div>
+         <h2>Email me</h2>
+         <p>My developer account -> <a href="mailto:editorrust@gmail.com">editorrust@gmail.com</a></p>
+         <p>My personal account -> <a href="mailto:hamza.elabi1@gmail.com">hamza.elabi1@gmail.com</a></p>
+      </div>
+   </div>
+</body>
+<script>
+function switchtabto(tab) {
+   document.querySelector(".activetab").classList.remove("activetab");
+   document.querySelector(`.${tab}-section`).classList.add("activetab");
+   document.querySelector(".activeswitcher").classList.remove("activeswitcher");
+   document.querySelector(`.switcher-${tab}`).classList.add("activeswitcher");
+   document.querySelector(`#${tab}-section`).scrollIntoView({ behavior: "smooth" });
+}
+</script>
+</html>

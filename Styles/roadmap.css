@@ -1,0 +1,78 @@
+body {
+   background-color: #ffbbbb;
+   color: #fff;
+}
+
+.header {
+   background-color: #663399;
+}
+
+.tabswitcher {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   background-color: #222;
+   text-align: center;
+}
+
+.tabswitcherbtn {
+   padding: .8em 0;
+   display: inline-block;
+   background-color: #222;
+   font: 1em sans-serif;
+   transition: .2s;
+}
+
+.activeswitcher {
+   background-color: #444;
+}
+
+.active-section { background-color: #00ff00; }
+.timeline-section { background-color: #00ffff; }
+.roadmap-section { background-color: #ffff00; }
+.activetab { background-color: #ffffff; }
+
+.sections {
+   padding: 2em 0;
+   overflow: auto;
+   white-space: nowrap;
+   overflow-x: hidden;
+}
+
+.sections::-webkit-scrollbar { display: none; }
+
+.section {
+   box-sizing: border-box;
+   display: inline-block;
+   width: 100vw;
+   white-space: initial;
+   color: #222;
+   transition: .05s;
+}
+
+
+.project-block {
+   padding: 4em 3em;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   background-color: #ddd;
+   border-bottom: solid .2em #222;
+}
+
+.img-parent {
+   text-align: center;
+}
+
+.img-parent img {
+   max-width: 40vw;
+}
+
+.text-block {
+   background-color: #fff;
+}
+
+
+@media only screen and (max-width: 700px) {
+   .project-block {
+      grid-template-columns: auto;
+   }
+}
