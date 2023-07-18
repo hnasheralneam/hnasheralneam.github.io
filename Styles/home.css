@@ -100,6 +100,10 @@ a {
    opacity: .8;
 }
 
+.thoughts-preview h2:hover {
+   text-decoration: underline;
+}
+
 .thoughts-preview h2:before {
    display: none;
 }
@@ -183,6 +187,13 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
+   .thoughts-preview h2 {
+      color: #eee;
+   }
+   .thoughts-preview * {
+      color: #ddd;
+   }
+
    .progress-parent {
       background-color: #444;
    }
