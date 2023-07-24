@@ -8,7 +8,7 @@ window.addEventListener("scroll", () => {
 
 function changeThme() {
    let color = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, "0");
-   document.documentElement.style.setProperty("--theme-color", `#${color}`);
+   setThemeColor(`#${color}`);
 }
 
 function changeThmeHex() {
@@ -16,7 +16,13 @@ function changeThmeHex() {
    if (hex) {
       if (hex.charAt(0) != "#") hex = `#${hex}`;
       if (/^#[0-9A-F]{3}$/i.test(hex) || /^#[0-9A-F]{6}$/i.test(hex) || /^#[0-9A-F]{8}$/i.test(hex)) {
-         document.documentElement.style.setProperty("--theme-color", hex);
+         setThemeColor(hex);
       } else alert("Invalid hex code!");
    }
+}
+
+function setThemeColor(color) {
+   document.documentElement.style.setProperty("--theme-color", color);
+   let metaThemeColor = document.querySelector("meta[name=theme-color]");
+   metaThemeColor.setAttribute("content", color);
 }
