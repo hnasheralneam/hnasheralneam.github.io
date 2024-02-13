@@ -12,7 +12,10 @@ body {
 
 .title {
    margin: 2rem 2rem 1rem 2rem;
-   text-align: center;
+}
+
+.subtitle {
+   margin: 0 2rem;
 }
 
 h2 {
@@ -25,7 +28,7 @@ h2 {
 h2::before {
    content: "";
    position: absolute;
-   top: .5rem;
+   top: .3rem;
    left: -.6rem;
    height: 1rem;
    width: .25rem;
@@ -81,12 +84,13 @@ a {
 }
 
 .main-text {
-   max-width: 900px;
+   max-width: 750px;
    transition: .2s;
 }
 
 .thoughts-preview {
    padding-top: 8.5em;
+   margin-right: 2em;
 }
 
 .thoughts-preview a {

@@ -1,18 +1,16 @@
-console.log("JavaScript Connected!");
-console.log("Nice to see you :)");
-console.log("Have a great day! -حمزة");
+console.log("hello");
 
 window.addEventListener("scroll", () => {
    document.body.style.setProperty("--scroll", window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
 
-function changeThme() {
+function changeTheme() {
    let color = (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, "0");
    setThemeColor(`#${color}`);
 }
 
-function changeThmeHex() {
-   let hex = prompt("Enter valid hexidecimal code :)");
+function changeThemeHex() {
+   let hex = prompt("Enter valid hexadecimal code :)");
    if (hex) {
       if (hex.charAt(0) != "#") hex = `#${hex}`;
       if (/^#[0-9A-F]{3}$/i.test(hex) || /^#[0-9A-F]{6}$/i.test(hex) || /^#[0-9A-F]{8}$/i.test(hex)) {
