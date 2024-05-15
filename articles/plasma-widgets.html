@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width">
+   <meta name="description" content="Hamza Nasher-Alneam's developer profile website!">
+   <link rel="shortcut icon" type="image/x-icon" href="icons/race.png">
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../styles/styles.css">
+   <link rel="stylesheet" href="../styles/thoughts.css">
+   <title>Plasma Widgets | Hamza Nasher-Alneam</title>
+</head>
+<body>
+   <a class="home" href="../index.html">Home</a>
+   <br><br>
+
+   <div class="content thoughtsblock" style="min-height: 80vh;">
+      <div class="article">
+         <p style="text-align: center; font-family: sans-serif;">I have had an awful time working with KDE widgets - so I'm trying to help you with them! I'll add more articles later.</p>
+         <br><br>
+         <h1 id="publish-widget" onclick="copy('publish-widget')">Publish your KDE Widget</h1>
+         <h2>May 15 2024</h2>
+         <p>You've just built an incredible KDE widget, and you want to share it with the world. But how do you make sure hundreds
+         of people will get to try your new widget?</p>
+         <p>The best way to publish a widget is through the KDE Store. Opendesktop hosts the KDE Store, so first you'll need to make
+         an account with them. Go to the <a href="https://store.kde.org/browse/">KDE Store</a> and click "Register" in the top
+         right corner. That will take you through the process of creating an account. Once you have an account, go back to the
+         main page of the KDE Store, and log in if you need to. If you click on the profile picture in the right corner, you
+         should get a menu that looks like this:</p>
+         <div style="width: 100%; text-align: center">
+            <img height="400" style="box-shadow: 0 0 .2em #ccc; border-radius: .4em;" src="../images/plasma-widgets/profile-icon-menu.png" alt="Profile icon menu">
+         </div>
+         <p>Click on Add Product, which will take you to this
+         page:</p>
+         <div style="width: 100%; text-align: center">
+            <img height="400" style="box-shadow: 0 0 .2em #ccc; border-radius: .4em;"
+               src="../images/plasma-widgets/new-product-page.png" alt="Profile icon menu">
+         </div>
+         <p>Fill in the information for your app, using "Plasma Mobile Widgets" as the catagory.
+         When you've entered all the needed catagories, press next. We can skip the settings step, so just click next again. Add your .plasmoid file, and click save.</p>
+         <p>That's it! If you go back to the main page of the KDE Store, search your app name and it should come up.</p>
+      </div>
+   </div>
+   <br><br>
+   <div class="footer">
+      <div>
+         <h2>Find me</h2>
+         <p>Github -> <a href="https://github.com/hnasheralneam">GitHub</a></p>
+         <p class="faded-footer">Many of my projects are on GitHub</p>
+      </div>
+      <div>
+         <h2>Contact me</h2>
+         <p>Email account -> <a href="mailto:hnasheralneam@gmail.com">hnasheralneam at google mail</a></p>
+         <p>Discord account -> <a href="#">namegoes.here</a></p>
+      </div>
+   </div>
+</body>
+<script>
+let url = document.location.href;
+
+function copy(txt) {
+   let link = `${url}#${txt}`;
+   navigator.clipboard.writeText(link).then(() => {
+       console.log("Copied link!");
+   }, () => { console.log("Error copying link."); });
+   let alert = document.createElement("DIV");
+   alert.textContent = "Copied Link to Heading!";
+   alert.classList.add("tempAlert");
+   document.body.appendChild(alert);
+   setTimeout(() => {
+      alert.style.opacity = "1";
+      alert.style.bottom = ".5rem";
+   }, 200);
+   setTimeout(() => {
+      alert.style.opacity = "0";
+      alert.style.bottom = "-10rem";
+   }, 4200);
+   setTimeout(() => {
+      alert.remove();
+   }, 4400);
+
+}
+</script>
+</html>
