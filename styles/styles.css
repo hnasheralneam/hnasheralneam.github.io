@@ -20,7 +20,7 @@ a {
 
 /* Footer styles */
 .footer {
-   padding: 1rem;
+   padding: 3rem 1rem;
    display: grid;
    grid-template-columns: auto auto;
    background-color: #222;

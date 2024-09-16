@@ -15,6 +15,7 @@ function changeThemeHex() {
       if (hex.charAt(0) != "#") hex = `#${hex}`;
       if (/^#[0-9A-F]{3}$/i.test(hex) || /^#[0-9A-F]{6}$/i.test(hex) || /^#[0-9A-F]{8}$/i.test(hex)) {
          setThemeColor(hex);
+         document.querySelector(".hex-code-label").textContent = "Hex code: " + hex;
       } else alert("Invalid hex code!");
    }
 }

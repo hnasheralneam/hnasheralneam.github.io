@@ -10,11 +10,22 @@ body {
    transition: .2s;
 }
 
+.main-text {
+   margin: auto;
+   max-width: 750px;
+   transition: .2s;
+}
+
+.main-text p {
+   margin: .5rem 2rem;
+}
+
 .title {
    margin: 2rem 2rem 1rem 2rem;
 }
 
 .subtitle {
+   font-style: italic;
    margin: 0 2rem;
 }
 
@@ -49,10 +60,6 @@ h3 {
    margin: .75rem 0 0 2rem;
 }
 
-.main-text p {
-   margin: .5rem 2rem;
-}
-
 button {
    padding: .2rem .5rem;
    font-size: 1.1rem;
@@ -77,48 +84,31 @@ a {
    color: var(--theme-color);
 }
 
-.content {
-   display: grid;
-   grid-template-columns: 70% calc(30% - 2em);
-   gap: 1em;
-}
-
-.main-text {
-   max-width: 750px;
-   transition: .2s;
-}
-
-.thoughts-preview {
-   padding-top: 8.5em;
-   margin-right: 2em;
-}
-
 .thoughts-preview a {
    color: initial;
    text-decoration: initial;
 }
 
-.thoughts-preview h2 {
-   margin: 0 0 .4em -.1em;
-   font-family: sans-serif;
-   opacity: .8;
-}
-
-.thoughts-preview h2:hover {
-   text-decoration: underline;
-}
-
-.thoughts-preview h2:before {
-   display: none;
+.thoughts-bit p {
+   padding: 0;
+   margin: 0;
 }
 
 .thoughts-bit {
-   padding: .8em 0;
-   border-bottom: .1em solid #bbb;
+   padding: 1rem;
+   border-radius: .5em;
+   margin: .4rem 1rem;
+   border: solid transparent .2rem;
+   transition: .25s;
 }
 
-.thoughts-bit.first-of-class {
-   border-top: .1em solid #bbb;
+.thoughts-bit:hover {
+   background-color: #aaaaaa20;
+   border-color: var(--theme-color);
+}
+
+.thoughts-bit:hover h4 {
+   text-decoration: underline;
 }
 
 .thoughts {
@@ -179,14 +169,6 @@ a {
       grid-template-columns: 100%;
       margin-right: 0;
       width: 100vw;
-   }
-   .thoughts-preview {
-      margin: 0 .6em;
-      padding: 1em 1.4em;
-      background-color: #dddddd20;
-      border-radius: .4em;
-      width: calc(100% - 2em);
-      box-sizing: border-box;
    }
 }
 
