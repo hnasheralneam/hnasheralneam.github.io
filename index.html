@@ -8,6 +8,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles/home.css">
    <link rel="stylesheet" href="styles/styles.css">
+   <link rel="stylesheet" href="styles/guestbook.css">
    <title>Hamza Nasher-Alneam</title>
 </head>
 <body>
@@ -51,8 +52,29 @@
                <button onclick="changeTheme()">Random</button>
                <button onclick="changeThemeHex()" class="hex-code-label">Hex code</button>
             </div>
+            <br><br>
+            <!-- Guestbook -->
+            <div class="guestbook">
+               <h3 class="guestbook-title">Guest book</h3>
+               <div class="messages"></div>
+               <div class="show-all-messages">
+                  <button onclick="this.remove(); showAll()">Show all messages</button>
+               </div>
+               <br>
+               <button class="post-button" onclick="toggleElement('new-message')">Post a message</button>
+               <div class="new-message-container" onclick="if (event.target.classList.contains('new-message-container')) toggleElement('new-message')">
+                  <div class="new-message">
+                     <form class="new-message-form" method="POST" action="http://localhost:54321/message">
+                        <label class="message-header" for="message">Your message for the world</label><br>
+                        <textarea type="text" name="message" placeholder="your post"></textarea><br>
+                        <label class="text-label" for="github">Your GitHub username</label><br>
+                        <input class="text" type="text" name="github" placeholder="github username">
+                        <input type="submit" value="Post" onclick="checkSubmissionValid(event)">
+                     </form>
+                  </div>
+               </div>
+            </div>
          </div>
-         <br>
          <div class="thoughts-preview">
             <h2>Thoughts</h2>
             <a href="articles/plasma-widgets.html#publish-widget">
@@ -100,4 +122,6 @@
 </body>
 <script defer src="https://umami.hnasheralneam.dev/script.js" data-website-id="22e45953-378d-4e42-afe7-b31c197d3105"></script>
 <script src="main.js"></script>
+<script src="https://hnasheralneam.github.io/digit/main.js"></script>
+<script src="scripts/guestbook.js"></script>
 </html>
