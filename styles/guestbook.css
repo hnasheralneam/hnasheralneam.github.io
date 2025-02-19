@@ -74,7 +74,7 @@
     top: 0;
     left: 0;
     font-size: 1.5rem;
-    line-height: 1rem;
+    font-family: inherit;
     padding-bottom: 2rem;
 }
 
@@ -173,7 +173,7 @@
     .new-message {
         background-color: #222222aa;
         box-shadow: 0 0 .2rem #444;
-    }    
+    }
 
     .new-message textarea {
         background-color: #111;
