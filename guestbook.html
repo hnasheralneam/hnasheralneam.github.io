@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta name="viewport" content="width=device-width">
+   <meta name="description" content="Hamza Nasher-Alneam's developer profile website!">
+   <meta name="theme-color" content="#f69b46">
+   <link rel="shortcut icon" type="image/x-icon" href="icons/race.png">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="styles/home.css">
+   <link rel="stylesheet" href="styles/styles.css">
+   <link rel="stylesheet" href="styles/guestbook.css">
+   <title>Guestbook | Hamza Nasher-Alneam</title>
+</head>
+
+<body>
+   <div class="progress-parent">
+      <div class="progress"></div>
+   </div>
+   <br><br>
+
+   <div class="content" style="min-height: 60vh">
+      <div class="main-text">
+         <div>
+            <!-- Guestbook -->
+            <div class="guestbook">
+               <h2 class="guestbook-title">Guest book - leave a note!</h2>
+               <div class="messages"></div>
+               <div class="show-all-messages">
+                  <button onclick="this.remove(); showAll()">Show all messages</button>
+               </div>
+               <br>
+               <button class="post-button" onclick="toggleElement('new-message')">Post a message</button>
+               <div class="new-message-container"
+                  onclick="if (event.target.classList.contains('new-message-container')) toggleElement('new-message')">
+                  <div class="new-message">
+                     <form class="new-message-form" method="POST"
+                        action="https://guestbook-api.hnasheralneam.dev/message">
+                        <label class="message-header" for="message">Your message for the world</label><br>
+                        <textarea type="text" name="message" placeholder="your post"></textarea><br>
+                        <label class="text-label" for="github">Your GitHub username</label><br>
+                        <input class="text" type="text" name="github" placeholder="github username">
+                        <input type="submit" value="Post" onclick="checkSubmissionValid(event)">
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <br><br>
+   <div w3-include-html="partials/footer.html"></div>
+   <div w3-include-html="partials/menu.html"></div>
+</body>
+<script src="scripts/include-html.js"></script>
+<script defer src="https://umami.hnasheralneam.dev/script.js"
+   data-website-id="22e45953-378d-4e42-afe7-b31c197d3105"></script>
+<script src="https://hnasheralneam.github.io/digit/main.js"></script>
+<script src="scripts/guestbook.js"></script>
+</html>

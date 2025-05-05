@@ -11,9 +11,7 @@
    <title>Thoughts | Hamza Nasher-Alneam</title>
 </head>
 <body>
-   <a class="home" href="index.html">Home</a>
    <br><br>
-
    <div class="content thoughtsblock">
       <div class="article">
          <h1 id="imessage-lockin" onclick="copy('imessage-lockin')">iMessage Lockin</h1>
@@ -34,23 +32,14 @@
          <p>In 2019 Samsung revealed the Galaxy Fold to the world. This may have been the first, but in their folly other companies were quick to follow. These weren't flip phones, they were smartphones that folded, a phone that looks like an ordinary or irritatingly skinny phone, until <i>wow, it flips open</i>, giving <i>twice the screen space</i>. How could this be less than perfect? It's the future! Well, sorry to break it to you, even with practical inconsistencies set aside (who has the time to flip their phone open every time they get a message? Most of the time the phone will stay closed, leaving you with a very thick but normal device), this is a developing nightmare. <i>Another</i> screen size to optimize for? So that's monitors, desktops, laptops, phones, and folding phones? Sure, a square screen looks nice, but not nearly enough people use it to make it worth developing for. Which brings us to the user.</p>
          <p>User experience is everything. You might have a great device or operating system, but if you can't easily access the content you need it isn't worth it. Which is why people don't use Linux. Here was a bold new device, but it was about to face a greater challenge than the dubious press: getting developers to make apps and websites for their screens. Apple had great success getting developers to optimize for the iPhone and tablet, but that's not the whole story. Do you remember the Macbook Pro touchbar? Here's how that went down. In 2016 Apple unveiled the new Macbook Pro with a touch bar display where the command keys used to be. They flaunted how the benefits were unimaginable, with every app adding custom controls for easy use. But in 2022, Apple removed it from most of its Pro lineup. Why? Because the biggest feature, custom app controls, was never used by developers. Macbooks already have such a small market share, but for creators it might still make sense. But the fact that it was only on the Pro lineup, such an insignificant amount of users would have been affected that developers decided not to build for it. And <i>that</i> is the reason it was removed, not battery efficiency or whatever excuse they used. The new Dynamic Island feature on their Pro phones is the same mistake, and while there is a larger number of users, if they don't convince developers to build for this it will go the way of the touchbar and 3d touch.</p>
          <p>So <i>what</i> was Samsung thinking? The phones are so expensive and niche that it makes nearly no sense to develop for them. If Android tablets had ever become a thing, then maybe apps would have been ready for that screen size and aspect ratio. But instead, Android apps are optimized for a normal phone screen, so opening nearly any website or app at full size is sure to be a bad experience. Why would someone buy a device where the core feature is extra screen if all their favorite apps and sites are warped and unusable? It just doesn't make sense. So you'd think that at least <i>some</i> phone manufacturers asked the geniuses behind their product design if this was a good idea. But <i>no</i>, everyone wants to get in on it. They think this is the Next Big Thing, and just about every phone maker has made or is rumored to be making a folding phone. But even with all of this aside, folding phones are <i>expensive</i>. The Samsung Galaxy Fold 4 starts at <i>1,799</i> US dollars. That is <i>not</i> a price most ordinary users are going to be willing to pay for a gimmick.</p>
-         <p>So, the folding phone. Smartphone makers are betting big when they keep making these, hoping that developers will build for them and consumers will buy. But the simple fact is, the smartphone market doesn't need disruption. The design we've reached, a flat rectangle, is basically perfect. It fits in your pocket, has an all-day battery life, and can run basically any task you want it to. And people are keeping their phones for longer, unwilling to buy another expensive phone that isn't noticeably better than their current one. I think this is the smartphone industry desperately scrambling to find some way to keep their exponential growth. But hey, that's just my opinion.</p>   
+         <p>So, the folding phone. Smartphone makers are betting big when they keep making these, hoping that developers will build for them and consumers will buy. But the simple fact is, the smartphone market doesn't need disruption. The design we've reached, a flat rectangle, is basically perfect. It fits in your pocket, has an all-day battery life, and can run basically any task you want it to. And people are keeping their phones for longer, unwilling to buy another expensive phone that isn't noticeably better than their current one. I think this is the smartphone industry desperately scrambling to find some way to keep their exponential growth. But hey, that's just my opinion.</p>
       </div>
    </div>
    <br><br>
-   <div class="footer">
-      <div>
-         <h2>Find me</h2>
-         <p>Github -> <a href="https://github.com/hnasheralneam">GitHub</a></p>
-         <p class="faded-footer">Many of my projects are on GitHub</p>
-      </div>
-      <div>
-         <h2>Contact me</h2>
-         <p>Email account -> <a href="mailto:hnasheralneam@gmail.com">hnasheralneam at google mail</a></p>
-         <p>Discord account -> <a href="#">namegoes.here</a></p>
-      </div>
-   </div>
+   <div w3-include-html="partials/footer.html"></div>
+   <div w3-include-html="partials/menu.html"></div>
 </body>
+<script src="scripts/include-html.js"></script>
 <script>
 let url = document.location.href;
 
