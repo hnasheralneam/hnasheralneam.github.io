@@ -84,7 +84,7 @@ a {
 .menu {
    position: fixed;
    top: 0;
-   left: .2rem;
+   left: .3rem;
    bottom: 0;
    width: 10rem;
    display: flex;

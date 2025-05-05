@@ -12,9 +12,7 @@
    <title>Hamza Nasher-Alneam</title>
 </head>
 <body>
-   <div class="progress-parent">
-      <div class="progress"></div>
-   </div>
+   <div class="progress-parent"><div class="progress"></div></div>
    <br><br>
 
    <div class="content">
@@ -64,63 +62,18 @@
                <p>Change the website color theme</p>
                <button onclick="changeTheme()">Random</button>
                <button onclick="changeThemeHex()" class="hex-code-label">Hex code</button>
+               <button onclick="resetTheme()">Reset</button>
             </div>
-            <br><br>
-            <!-- Guestbook -->
-            <!-- <div class="guestbook">
-               <h2 class="guestbook-title">Guest book - leave a note!</h2>
-               <div class="messages"></div>
-               <div class="show-all-messages">
-                  <button onclick="this.remove(); showAll()">Show all messages</button>
-               </div>
-               <br>
-               <button class="post-button" onclick="toggleElement('new-message')">Post a message</button>
-               <div class="new-message-container" onclick="if (event.target.classList.contains('new-message-container')) toggleElement('new-message')">
-                  <div class="new-message">
-                     <form class="new-message-form" method="POST" action="https://guestbook-api.hnasheralneam.dev/message">
-                        <label class="message-header" for="message">Your message for the world</label><br>
-                        <textarea type="text" name="message" placeholder="your post"></textarea><br>
-                        <label class="text-label" for="github">Your GitHub username</label><br>
-                        <input class="text" type="text" name="github" placeholder="github username">
-                        <input type="submit" value="Post" onclick="checkSubmissionValid(event)">
-                     </form>
-                  </div>
-               </div>
-            </div> -->
          </div>
-         <!-- <div class="thoughts-preview">
-            <h2>Thoughts</h2>
-            <a hre="articles/plasma-widgets.html#publish-widget">
-               <div class="thoughts-bit"
-                  <h4>Publish your Plasma widget</h4>
-                  <i>May 15 2024</i>
-                  <p>A quick tutorial that shows how publish a KDE widget on the widget store. More on KDE widgets coming soon
-                     hopefully!</p>
-               </div>
-            </a>
-            <a href="thoughts.html#imessage-lockin">
-               <div class="thoughts-bit">
-                  <h4>The social issues with iMessage</h4>
-                  <i>Dec 1 2022</i>
-                  <p>I discusses the technology behind SMS, which is used when messaging between iPhones and other devices, as well as the newer MMS and RCS standards.</p>
-               </div>
-            </a>
-            <a href="thoughts.html#reject-folding-phones">
-               <div class="thoughts-bit">
-                  <h4>An argument against folding phones</h4>
-                  <i>Dec 1 2022</i>
-                  <p>I mention the impracticalities in more words than strictly necessary.</p>
-               </div>
-            </a>
-         </div> -->
+         <br><br>
       </div>
    </div>
-
    <br><br>
    <div w3-include-html="partials/footer.html"></div>
    <div w3-include-html="partials/menu.html"></div>
 </body>
 <script src="scripts/include-html.js"></script>
+<script src="scripts/script.js"></script>
 <script src="scripts/main.js"></script>
 <script src="https://hnasheralneam.github.io/digit/main.js"></script>
 <script defer src="https://umami.hnasheralneam.dev/script.js"

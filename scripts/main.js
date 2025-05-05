@@ -1,5 +1,3 @@
-console.log("hello");
-
 window.addEventListener("scroll", () => {
    document.body.style.setProperty("--scroll", window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
@@ -20,8 +18,6 @@ function changeThemeHex() {
    }
 }
 
-function setThemeColor(color) {
-   document.documentElement.style.setProperty("--theme-color", color);
-   let metaThemeColor = document.querySelector("meta[name=theme-color]");
-   metaThemeColor.setAttribute("content", color);
+function resetTheme() {
+   setThemeColor("#f69b46");
 }
