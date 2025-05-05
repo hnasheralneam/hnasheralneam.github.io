@@ -1,3 +1,73 @@
+* {
+    font-family: "Nunito", "Times New Roman", Times, serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.content {
+    transition: .2s;
+    margin: auto;
+    max-width: 80rem;
+    transition: .2s;
+}
+
+h2 {
+    position: relative;
+    margin: 1rem .75rem .75rem 2.5rem;
+    font-size: 1.5rem;
+    transition: .2s;
+}
+
+h3 {
+    margin: .75rem 0 0 2rem;
+}
+
+button {
+    padding: .2rem .5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: var(--theme-color);
+    border: solid .2rem var(--theme-color);
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .2rem #ddd;
+    transition: .15s;
+}
+
+button:hover {
+    color: var(--theme-color);
+    background-color: transparent;
+}
+
+button:active {
+    transform: scale(.98);
+}
+
+a {
+    color: var(--theme-color);
+}
+
+@media only screen and (max-width: 700px) {
+    .content {
+        grid-template-columns: 100%;
+        margin-right: 0;
+        width: 100vw;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    button {
+        box-shadow: 0 .2rem .2rem #000;
+    }
+}
+
+
+
+
+
+
+
 .guestbook {
     padding-top: 2rem;
     position: relative;
@@ -9,11 +79,6 @@
 
 .guestbook .messages {
     margin: 1rem 0;
-    max-width: 100vw;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scrollbar-width: none;
     text-align: center;
 }
 
@@ -26,7 +91,7 @@
     margin: 0 .3rem;
     min-height: 14rem;
     min-width: 20rem;
-    max-width: 25rem;
+    max-width: 24rem;
     /* max-width: 700px; */
     border: solid .2rem var(--theme-color);
     border-radius: 1rem;

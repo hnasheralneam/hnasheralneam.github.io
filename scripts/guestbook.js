@@ -5,6 +5,10 @@ function checkSubmissionValid(event) {
       event.preventDefault();
       document.querySelector('.status').textContent = "Fill out all fields";
    }
+   else if (message.length > 500) {
+      event.preventDefault();
+      document.querySelector('.status').textContent = "Message too long";
+   }
    else {
       document.querySelector('.status').textContent = "Post succesful!";
    }
@@ -58,12 +62,4 @@ function toggleElement(elementName) {
       element.style.opacity = 0;
       element.style.pointerEvents = "none";
    }
-}
-
-function showAll() {
-   getAll();
-   let messagesElement = document.querySelector(".messages");
-   messagesElement.style.overflowX = "hidden";
-   messagesElement.style.overflowY = "auto";
-   messagesElement.style.whiteSpace = "wrap";
 }

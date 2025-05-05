@@ -5,11 +5,10 @@
    <meta name="viewport" content="width=device-width">
    <meta name="description" content="Hamza Nasher-Alneam's developer profile website!">
    <meta name="theme-color" content="#f69b46">
-   <link rel="shortcut icon" type="image/x-icon" href="icons/race.png">
+   <link rel="shortcut icon" type="image/x-icon" href="icons/phil.png">
    <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
       rel="stylesheet">
-   <link rel="stylesheet" href="styles/home.css">
    <link rel="stylesheet" href="styles/styles.css">
    <link rel="stylesheet" href="styles/guestbook.css">
    <title>Guestbook | Hamza Nasher-Alneam</title>
@@ -22,14 +21,12 @@
    <br><br>
 
    <div class="content" style="min-height: 60vh">
-      <div class="main-text">
-         <div>
             <!-- Guestbook -->
             <div class="guestbook">
                <h2 class="guestbook-title">Guest book - leave a note!</h2>
                <div class="messages"></div>
                <div class="show-all-messages">
-                  <button onclick="this.remove(); showAll()">Show all messages</button>
+                  <button onclick="this.remove(); getAll()">Show all messages</button>
                </div>
                <br>
                <button class="post-button" onclick="toggleElement('new-message')">Post a message</button>
@@ -39,7 +36,7 @@
                      <form class="new-message-form" method="POST"
                         action="https://guestbook-api.hnasheralneam.dev/message">
                         <label class="message-header" for="message">Your message for the world</label><br>
-                        <textarea type="text" name="message" placeholder="your post"></textarea><br>
+                        <textarea type="text" name="message" placeholder="your post" maxlength="500"></textarea><br>
                         <label class="text-label" for="github">Your GitHub username</label><br>
                         <input class="text" type="text" name="github" placeholder="github username">
                         <input type="submit" value="Post" onclick="checkSubmissionValid(event)">
@@ -47,8 +44,6 @@
                   </div>
                </div>
             </div>
-         </div>
-      </div>
    </div>
 
    <br><br>
