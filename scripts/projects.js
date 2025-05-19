@@ -119,6 +119,17 @@ document.querySelector(".carousel").addEventListener("click", (event) => {
    }
 });
 
+document.querySelector(".carousel").addEventListener("dblclick", (event) => {
+   console.log("hi")
+   if (event.target.parentElement.parentElement.classList.contains("active")) {
+      if ((Date.now() - lastChange) < 500) return;
+      nextSlide();
+      resetCarouselLoop();
+      lastChange = Date.now();
+   }
+});
+
+
 function nextSlide() {
    activeIndex = (activeIndex + 1) % items.length;
    updateCarousel();
@@ -130,10 +141,10 @@ function lastSlide() {
 }
 
 updateCarousel();
-carouselLoop = setInterval(nextSlide, 2000);
+carouselLoop = setInterval(nextSlide, 4000);
 
 function resetCarouselLoop() {
    lastChange = Date.now();
    clearInterval(carouselLoop);
-   carouselLoop = setInterval(nextSlide, 2000);
+   carouselLoop = setInterval(nextSlide, 4000);
 }
