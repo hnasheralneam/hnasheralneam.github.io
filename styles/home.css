@@ -84,43 +84,6 @@ a {
    color: var(--theme-color);
 }
 
-.thoughts-preview a {
-   color: initial;
-   text-decoration: initial;
-}
-
-.thoughts-bit p {
-   padding: 0;
-   margin: 0;
-}
-
-.thoughts-bit {
-   padding: 1rem;
-   border-radius: .5em;
-   margin: .4rem 1rem;
-   border: solid transparent .2rem;
-   transition: .25s;
-}
-
-.thoughts-bit:hover {
-   background-color: #aaaaaa20;
-   border-color: var(--theme-color);
-}
-
-.thoughts-bit:hover h4 {
-   text-decoration: underline;
-}
-
-.thoughts {
-   margin: 2rem 2rem 0 0;
-   float: right;
-   color: #888;
-   text-decoration: none;
-   font-weight: 700;
-   font-size: 1.5rem;
-   font-family: monospace;
-}
-
 .funsies {
    padding: .5rem 2rem;
 }
@@ -190,5 +153,119 @@ a {
       .thoughts-preview {
          background-color: #77777720;
       }
+   }
+}
+
+/* People */
+.people {
+   margin: 0 2rem;
+}
+.person {
+   display: inline-block;
+   border: solid .15rem;
+   border-color: #444;
+   background-color: #2a2a2a;
+   width: 12rem;
+   border-radius: .5rem;
+   margin: .4rem .1rem;
+   padding: .6rem .7rem .8rem .7rem;
+   text-align: center;
+}
+.person h4 {
+   margin-bottom: .3rem;
+}
+.person a {
+   margin: .4rem .1rem;
+   padding: .2rem .4rem;
+   background-color: var(--theme-color);
+   color: #fff;
+   text-decoration: none;
+   border-radius: .2rem;
+   transition: .2s;
+   text-shadow: 0 0 .05rem #000;
+}
+.person a:hover {
+   background-color: #fff;
+   color: var(--theme-color);
+   text-shadow: 0 0 .05rem #000;
+}
+
+
+/* Recent github actions */
+.github-actions {
+   font-size: 0.9em;
+   line-height: 1.6;
+   margin: 1rem 2rem;
+}
+
+.github-event-card {
+   border: .15rem solid #ddd;
+   border-radius: .5rem;
+   padding: 5px 15px;
+   margin-bottom: 15px;
+   background-color: #f9f9f9;
+}
+
+.github-event-card .event-type {
+   margin: 5px 0;
+   font-size: 1.3em;
+}
+
+.github-event-card .event-details dt {
+   font-weight: bold;
+   color: #333;
+   float: left;
+   width: 120px;
+   clear: left;
+}
+
+.github-event-card .event-details dd {
+   margin-left: 130px;
+   color: #555;
+}
+
+.github-event-card .event-comment-body {
+   white-space: pre-wrap;
+   word-break: break-word;
+   font-size: 0.9em;
+   padding: 5px;
+   max-height: 100px;
+   overflow-y: auto;
+}
+
+.github-event-card .event-time {
+   font-size: 0.8em;
+   color: #777;
+   margin-left: 10px;
+   text-align: right;
+}
+
+@media only screen and (max-width: 700px) {
+   .github-event-card .event-details dt {
+      width: 80px;
+      text-align: right;
+   }
+
+   .github-event-card .event-details dd {
+      margin-left: 90px;
+   }
+}
+
+@media (prefers-color-scheme: dark) {
+   .github-event-card {
+      border-color: #444;
+      background-color: #2a2a2a;
+   }
+
+   .github-event-card .event-details dt {
+      color: #ccc;
+   }
+
+   .github-event-card .event-details dd {
+      color: #bbb;
+   }
+
+   .github-event-card .event-time {
+      color: #777;
    }
 }
