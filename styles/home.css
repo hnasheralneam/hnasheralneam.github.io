@@ -163,8 +163,8 @@ a {
 .person {
    display: inline-block;
    border: solid .15rem;
-   border-color: #444;
-   background-color: #2a2a2a;
+   border-color: #ddd;
+   background-color: #f9f9f9;
    width: 12rem;
    border-radius: .5rem;
    margin: .4rem .1rem;
@@ -177,19 +177,23 @@ a {
 .person a {
    margin: .4rem .1rem;
    padding: .2rem .4rem;
-   background-color: var(--theme-color);
-   color: #fff;
+   border: solid .2rem var(--theme-color);
+   background-color: transparent;
    text-decoration: none;
    border-radius: .2rem;
-   transition: .2s;
-   text-shadow: 0 0 .05rem #000;
+   background-color: var(--theme-color);
+   color: #fff;
+   transition: .3s;
+   /* text-shadow: 0 0 .05rem #000; */
 }
 .person a:hover {
-   background-color: #fff;
-   color: var(--theme-color);
-   text-shadow: 0 0 .05rem #000;
-}
+   background-color: transparent;
 
+   color: var(--theme-color);
+   /* background-color: #aaa;
+   color: #000; */
+   /* text-shadow: 0 0 .05rem #000; */
+}
 
 /* Recent github actions */
 .github-actions {
@@ -204,6 +208,7 @@ a {
    padding: 5px 15px;
    margin-bottom: 15px;
    background-color: #f9f9f9;
+   overflow: hidden;
 }
 
 .github-event-card .event-type {
@@ -249,6 +254,10 @@ a {
    .github-event-card .event-details dd {
       margin-left: 90px;
    }
+
+   .people {
+      text-align: center;
+   }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -267,5 +276,10 @@ a {
 
    .github-event-card .event-time {
       color: #777;
+   }
+
+   .person {
+      border-color: #444;
+      background-color: #2a2a2a;
    }
 }
