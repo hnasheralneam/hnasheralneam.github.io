@@ -4,7 +4,7 @@ let userData;
 let userEvents;
 
 getUserInfo();
-getEvents();
+// getEvents();
 
 async function getUserInfo() {
    try {

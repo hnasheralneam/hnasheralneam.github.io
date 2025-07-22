@@ -170,6 +170,11 @@ a {
    margin: .4rem .1rem;
    padding: .6rem .7rem .8rem .7rem;
    text-align: center;
+   transition: .2s;
+}
+.person:hover {
+   box-shadow: 0 .2rem .4rem #00000044;
+   transform: translateY(-.25rem);
 }
 .person h4 {
    margin-bottom: .3rem;
@@ -193,6 +198,10 @@ a {
    /* background-color: #aaa;
    color: #000; */
    /* text-shadow: 0 0 .05rem #000; */
+}
+
+.socials {
+   margin: .6rem 0 .4rem 0;
 }
 
 /* Recent github actions */
