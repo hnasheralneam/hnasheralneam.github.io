@@ -45,12 +45,13 @@ function createMessage(message) {
    messageDiv.classList.add('card');
    messageDiv.innerHTML = `
       <div>
-         <p class="message">${message.message}</p>
-         <a class="name" href="https://fetchcv.hnasheralneam.dev/user/github/${message.github}">${message.github}</a><br>
+         <p class="message"></p>
+         <a class="name" href="https://fetchcv.hnasheralneam.dev/user/github/${message.github}">.</a><br>
          <i>${formatDate(message.timestamp.toLocaleString(), "dmy")}</i>
-      </div>`;
+      </div>`; // fix security of url later
    document.querySelector('.messages').appendChild(messageDiv);
-
+   messageDiv.querySelector(".message").textContent = message.message;
+   messageDiv.querySelector(".name").textContent = message.github;
 }
 
 function toggleElement(elementName) {
