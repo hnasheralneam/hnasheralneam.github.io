@@ -30,14 +30,15 @@ button {
     color: #fff;
     background-color: var(--theme-color);
     border: solid .2rem var(--theme-color);
-    border-radius: .5rem;
-    box-shadow: 0 .1rem .2rem #ddd;
+    border-radius: 1.75rem;
+    text-shadow: 0 0 .05rem #44444488;
     transition: .15s;
 }
 
 button:hover {
     color: var(--theme-color);
     background-color: transparent;
+    text-shadow: none;
 }
 
 button:active {

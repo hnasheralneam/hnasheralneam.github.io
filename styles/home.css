@@ -92,6 +92,57 @@ a {
    margin: 0 .2rem .8rem .2rem;
 }
 
+.banner-parent {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   color: white;
+   background-color: #222;
+   font-size: 1.1rem;
+   padding: .3rem;
+   overflow: hidden;
+   letter-spacing: 0.04rem;
+}
+
+.banner {
+   flex-shrink: 0;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   animation: banner-scroll calc((3800 * 1s) / 100) linear infinite;
+}
+
+.banner-text {
+   display: block;
+   flex-shrink: 0;
+   flex-grow: 0;
+   margin: 0;
+}
+
+.banner-text span {
+   margin: 0 .6rem;
+}
+
+.banner-copies {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   height: 100%;
+   width: 0;
+   flex-grow: 0;
+   flex-shrink: 0;
+}
+
+@keyframes banner-scroll {
+   from {
+      transform: translateX(0%);
+   }
+
+   to {
+      transform: translateX(-100%);
+   }
+}
+
 .progress-parent {
    display: block;
    width: 100%;
@@ -185,7 +236,9 @@ a {
    border: solid .2rem var(--theme-color);
    background-color: transparent;
    text-decoration: none;
-   border-radius: .2rem;
+   border-radius: 1.75rem;
+   /* box-shadow: inset 0 0 .3rem #44444466; */
+   text-shadow: 0 0 .05rem #44444488;
    background-color: var(--theme-color);
    color: #fff;
    transition: .3s;
@@ -193,6 +246,8 @@ a {
 }
 .person a:hover {
    background-color: transparent;
+   text-shadow: none;
+   box-shadow: none;
 
    color: var(--theme-color);
    /* background-color: #aaa;
@@ -290,5 +345,10 @@ a {
    .person {
       border-color: #444;
       background-color: #2a2a2a;
+   }
+
+   .banner-parent {
+      background-color: #444;
+      color: #fff;
    }
 }

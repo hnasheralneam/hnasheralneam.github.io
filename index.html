@@ -12,7 +12,52 @@
    <title>Hamza Nasher-Alneam</title>
 </head>
 <body>
-   <div class="progress-parent"><div class="progress"></div></div>
+   <div class="progress-parent">
+      <div class="progress"></div>
+      <!-- <div class="banner-parent">
+         <div class="banner">
+            <p class="banner-text">let's go programmming <span>-</span> cybersecurity!!! <span>-</span> sysadministration is fun? <span>-</span> ui design is my passion <span>-</span> secretary of cyberdawgs! <span>-</span>
+            yay javascript <span>-</span>&nbsp;</p>
+            <div class="banner-copies" aria-hidden="true"></div>
+         </div>
+      </div> -->
+   </div>
+   <!-- <script>
+      document.addEventListener('DOMContentLoaded', function () {
+            setMarqueeContents();
+         });
+
+         window.addEventListener('resize', function () {
+            setMarqueeContents();
+         });
+
+         function setMarqueeContents() {
+            const marqueeContainer = document.querySelector('.banner-parent');
+            const marqueeTextElement = document.querySelector('.banner > .banner-text');
+            const marqueeCopiesContainer = document.querySelector('.banner-copies');
+
+            if (!marqueeContainer || !marqueeTextElement || !marqueeCopiesContainer) {
+               return;
+            }
+
+            const windowWidth = window.innerWidth;
+
+            const textWidth = marqueeTextElement.offsetWidth;
+            document.documentElement.style.setProperty("--textWidth", textWidth + "px");
+
+            const numberOfCopies = Math.ceil(windowWidth / textWidth) + 1;
+
+            marqueeContainer.style.setProperty('--textWidth', `${textWidth}px`);
+
+            marqueeCopiesContainer.innerHTML = "";
+
+            for (let i = 0; i < numberOfCopies; i++) {
+               const clonedNode = marqueeTextElement.cloneNode(true);
+
+               marqueeCopiesContainer.appendChild(clonedNode);
+            }
+         }
+   </script> -->
    <br><br>
 
    <div class="content">
@@ -120,6 +165,19 @@
    <div w3-include-html="partials/footer.html"></div>
    <div w3-include-html="partials/menu.html"></div>
 </body>
+<script>
+   // Source - https://stackoverflow.com/a
+   // Posted by Kamil Kiełczewski, modified by community. See post 'Timeline' for change history
+   // Retrieved 2025-12-15, License - CC BY-SA 4.0
+
+   // async function load() {
+   //    let url = window.location.hostname + ':8080/content/index.json';
+   //    let obj = await (await fetch(url)).json();
+   //    console.log(obj);
+   // }
+
+   // load();
+</script>
 <script src="scripts/include-html.js"></script>
 <script src="scripts/script.js"></script>
 <script src="scripts/main.js"></script>

@@ -1,0 +1,68 @@
+{
+    "title": "Hi, I'm Hamza Nasher-Alneam",
+    "subtitle": "Computer science freshman at UMBC, with an interest in software development, ux design, cybersecurity, and system management",
+    "about": {
+        "title": "about me",
+        "paragraphs": [
+         "When not doing student things, I enjoy writing unoptimized JavaScript code and messing around with Linux on desktop and server. Currently I'm focused on the CyberDawgs club and working on some secret projects."
+      ]
+   },
+    "projects": {
+        "title": "Projects",
+        "paragraphs": [
+         "Last spring, I was working on multiplayer for Medium Rare, a game started at QuHacks. Before that, I was working on a prayer times plasmoid (widget) for KDE, as well as a Produced Demand, a bus management game build with Godot.",
+         "Prominent among my older projects is FetchCV, a developer profile site built with a friend. Another smaller project was Activity Log, a time tracking tool with graphs. If you want to see what I'm working on this week, it'll be up on my GitHub."
+      ]
+   },
+    "achievements": {
+        "title": "Achievements",
+        "items": [
+         {
+            "date": "October 11 2025",
+            "about": "With three teammates, won 1st place against over 16 teams in the UMBC CDE cyber competition. I was responsible for the network box and one of the Linux boxes."
+         },
+         {
+            "date": "December 14 2024",
+            "about": "Kai and I won 1st place on the beginner track for QuHacks 2025 with our game Medium Rare, which you can play at mediumrare.hnasheralneam.dev."
+         },
+         {
+            "date": "February 24 2024",
+            "about": "Urdons and I won first place and the technical award at the MAGIC STEP Challenge! Here is our project and presentation."
+         },
+         {
+            "date": "February 11 2024",
+            "about": "Two of the teams (I was on one) from the Broadneck Robotics club made it to the VEX Over Under state championship!"
+         },
+         {
+            "date": "April 20 2023",
+            "about": "Justin and I won third place at the MAGIC cybersecurity CTF! Here are the results."
+         }
+      ]
+   },
+    "friends": {
+        "items": [
+         {
+            "name": "Urdons",
+            "website": "https://burdne.com",
+            "github": "https://github.com/Urdons"
+         },
+         {
+            "name": "Sai",
+            "github": "https://github.com/devsai9"
+         },
+         {
+            "name": "Kai",
+            "github": "https://github.com/grekand46"
+         },
+         {
+            "name": "Raiyan Zaman",
+            "website": "https://raiyantech.com",
+            "github": "https://github.com/rzaman8677"
+         },
+         {
+            "name": "Dipa",
+            "github": "https://github.com/0xL30N3"
+         }
+      ]
+   }
+}
