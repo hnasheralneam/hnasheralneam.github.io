@@ -23,19 +23,22 @@
             <!-- Guestbook -->
             <div class="guestbook">
                <h2 class="guestbook-title">Guest book - leave a note!</h2>
-               <div class="messages"></div>
-               <div class="show-all-messages">
-                  <button onclick="this.remove(); getAll()">Show all messages</button>
-               </div>
                <br>
-               <button class="post-button" onclick="toggleElement('new-message')">Post a message</button>
+               <div class="messages"></div>
+               <br>
+               <div class="buttons">
+                  <div class="show-all-messages">
+                     <button onclick="this.remove(); getAll()">Show all messages</button>
+                  </div>
+                  <button class="post-button" onclick="toggleElement('new-message')">Post a message</button>
+               </div>
                <div class="new-message-container"
                   onclick="if (event.target.classList.contains('new-message-container')) toggleElement('new-message')">
                   <div class="new-message">
                      <form class="new-message-form" method="POST"
                         action="https://guestbook-api.hnasheralneam.dev/message">
                         <label class="message-header" for="message">Your message for the world</label><br>
-                        <textarea type="text" name="message" placeholder="your post" maxlength="500"></textarea><br>
+                        <textarea type="text" name="message" placeholder="your post" maxlength="300"></textarea><br>
                         <label class="text-label" for="github">Your GitHub username</label><br>
                         <input class="text" type="text" name="github" placeholder="github username">
                         <input type="submit" value="Post" onclick="checkSubmissionValid(event)">

@@ -46,11 +46,12 @@ function createMessage(message) {
    messageDiv.innerHTML = `
       <div>
          <p class="message"></p>
-         <a class="name" href="https://fetchcv.hnasheralneam.dev/user/github/${message.github}">.</a><br>
+         <a class="name"></a><br>
          <i>${formatDate(message.timestamp.toLocaleString(), "dmy")}</i>
       </div>`; // fix security of url later
    document.querySelector('.messages').appendChild(messageDiv);
    messageDiv.querySelector(".message").textContent = message.message;
+   messageDiv.querySelector(".name").href = `https://fetchcv.hnasheralneam.dev/user/github/${message.github}`;
    messageDiv.querySelector(".name").textContent = message.github;
 }
 
