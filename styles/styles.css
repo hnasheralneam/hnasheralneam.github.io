@@ -146,6 +146,31 @@ a {
    }
 }
 
+/* Buttons */
+button {
+    padding: .2rem .5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: var(--theme-color);
+    border: solid .2rem var(--theme-color);
+    border-radius: 1.75rem;
+    text-shadow: 0 0 .05rem #44444488;
+    transition: .15s;
+}
+
+button:hover {
+    color: var(--theme-color);
+    background-color: transparent;
+    text-shadow: none;
+}
+
+button:active {
+    transform: scale(.98);
+}
+
+
+
+
 @media (prefers-color-scheme: dark) {
    .menu .item {
       background-color: #333;
