@@ -66,11 +66,12 @@ a {
     align-items: center;
     background-color: color-mix(in srgb, var(--theme-color), transparent 95%);
     position: relative;
+    transition: .2s;
 }
 
 .guestbook .card:hover {
-   transform: translateX(-12px) translateY(-12px);
-   box-shadow: 12px 12px 0 #111;
+   transform: translateX(-8px) translateY(-8px);
+   box-shadow: 8px 8px 0 var(--secondary-color);
 }
 
 .guestbook .card .message {
