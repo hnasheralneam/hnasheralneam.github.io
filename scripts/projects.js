@@ -73,10 +73,10 @@ data.forEach((item) => {
                 <div class="text-items">
                     <h2>${item.title}</h2>
                     <p>${item.description}</p>
-                    <p class="more">
-                        <span class="started">Started ${item.date}</span>&nbsp;|&nbsp;
-                        <a href="${item.link}">Try it</a>&nbsp;|&nbsp;
-                        <a href="${item.github}">GitHub Repository</a>
+                     <span class="started">Started ${item.date}</span>
+                    <p class="actions">
+                        <a class="link-button" href="${item.link}">Try it out</a>
+                        <a class="link-button" href="${item.github}">See the code</a>
                     </p>
                 </div>
         </div>`;

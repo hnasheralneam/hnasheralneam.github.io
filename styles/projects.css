@@ -83,34 +83,25 @@
 
 .carousel-item-inner {
    background-color: #f5f5f5;
-   border-radius: 2rem;
-   padding: 0.5rem 0.5rem 1.5rem;
+   border-radius: 1.5rem;
+   padding: 0 0 1.5rem 0;
    transition: 0.2s;
    border: 0.2rem solid #ddd;
+   overflow: hidden;
 }
 
-.carousel-item-inner:hover img {
+/* .carousel-item-inner:hover img {
    box-shadow: 0 0.2rem 0.5rem #111;
    transform: translateY(-0.3rem);
-}
+} */
 
 .carousel-item img {
    width: 78vh;
-   border-radius: 1.6rem;
-   transition: 0.2s;
+   border-bottom: solid 0.2rem #ddd;
 }
 
 .carousel-item .text-items {
    margin: 1rem 0;
-}
-
-.carousel-item h2 a {
-   text-decoration: none;
-   cursor: pointer;
-}
-
-.carousel-item h2 a:hover {
-   text-decoration: underline;
 }
 
 .carousel-item p {
@@ -120,13 +111,21 @@
 
 .title {
    text-align: center;
-   font-size: 5rem;
-   margin-bottom: -3rem;
+   font-size: 4rem;
+   font-family: monospace;
+   margin-top: 2rem;
+   margin-bottom: -5rem;
    color: #333;
-   text-shadow: 0 0 .2rem #fff, .2rem .2rem cyan,
-      -.2rem -.2rem magenta;
+   text-shadow: 0 .2rem .2rem color-mix(in srgb, var(--theme-color), transparent 30%);
 }
 
+.started {
+   opacity: .7;
+}
+
+.actions {
+   margin-top: .5rem;
+}
 
 @media only screen and (max-width: 750px) {
    .carousel-inner {
@@ -145,14 +144,15 @@
 @media (prefers-color-scheme: dark) {
    .title {
       color: #fff;
-      text-shadow: 0 0 .2rem #888, .2rem .2rem cyan,
-            -.2rem -.2rem magenta;
    }
    .carousel-item-inner {
-      background-color: #333;
-      border: 0.2rem solid #666;
+      border-color: #2f2f2f;
+      background-color: #1c1c1c;
    }
    .carousel-item p {
       color: #ddd;
+   }
+   .carousel-item img {
+      border-color: #2f2f2f;
    }
 }
