@@ -226,10 +226,6 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-   .guestbook .card:hover {
-      box-shadow: 12px 12px 0 #ccc;
-   }
-
     .new-message-container {
         background-color: #00000088;
     }

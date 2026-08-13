@@ -56,7 +56,7 @@ const data = [{
 },
 {
    title: "Produced Demand",
-   description: "A bus maanagement game",
+   description: "A bus management game",
    date: "2025",
    image: "../images/projects/produceddemand.png",
    link: "https://hnasheralneam.itch.io/produced-demand",
